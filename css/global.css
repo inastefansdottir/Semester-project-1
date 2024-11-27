@@ -1,0 +1,44 @@
+:root {
+    /* Primary palette */
+    --primary-color: #FE5C6B;
+    --primary-light: #F3EAE0;
+
+    /* Secondary palette */
+    --secondary-color: #FF9767;
+
+    /* Accent palette */
+    --accent-color: #86DBDC;
+    --accent-dark: #747474;
+}
+
+body {
+    font-family: "REM", Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Gabarito", Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+.hamburger-icon,
+#menu-checkbox,
+.logo-mobile {
+    display: none;
+}
+
+.header-icons {
+    color: var(--primary-light);
+}
+
+nav ul {
+    list-style: none; 
+}
