@@ -20,7 +20,7 @@
             </label>
 
             <a href="../">
-                <img src="../images/shared/logo-cream.png" alt="Community Science Museum logo">
+                <img src="../images/shared/logo-cream.png" alt="Community Science Museum logo" class="logo">
             </a>
 
             <nav>
@@ -50,11 +50,11 @@
                 </p>
             </div>
 
-            <img src="../images/about/kids-playing.jpg">
+            <img src="../images/about/kids-playing.jpg" alt="Two young boys playing outdoors near a water activity, one looking excited.">
         </article>
 
         <div>
-            <img src="../images/about/orange-bubbles.jpg">
+            <img src="../images/about/orange-bubbles.jpg" alt="A cluster of bubbles in different sizes, floating on an orange background, creating an abstract design.">
             <div>
                 <p>
                     The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
@@ -74,7 +74,7 @@
             <p>
                 You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.
             </p>
-            <img src="../images/about/boy-painting.jpg">
+            <img src="../images/about/boy-painting.jpg" alt="A boy wearing virtual reality goggles and plastic overalls, about to paint on a canvas.">
         </article>
 
         <div>
@@ -101,24 +101,26 @@
     </main>
 
     <footer aria-label="Museum footer">
-        <section>
+        <section class="museum-info">
             <h4>Community Science Museum</h4>
             <a href="../visit/" class="opening-times">See all opening times</a>
             <address>The museum is located at: Brynjulf Bulls plass 3, 0250 Oslo</address>
-            <p><span>Phone:</span>+00 00 00 00</p>
+            <p><strong class="bold-text">Phone: </strong>+00 00 00 00</p>
         </section>
 
-        <section>
-            <h5 id="newsletter-heading">Sign me up for newsletter!</h5>
-            <form class="newsletter-form">
-                <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                placeholder="Your email address"
-                aria-labelledby="newsletter-heading">
-                <button type="submit" aria-label="Subscribe to our newsletter">Subscribe</button>
-            </form>
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h5 id="newsletter-heading">Sign me up for newsletter!</h5>
+                <form class="newsletter-form">
+                    <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Your email address"
+                    aria-labelledby="newsletter-heading">
+                    <button class="button" type="submit" aria-label="Subscribe to our newsletter">Subscribe</button>
+                </form>
+            </div>
             <div class="social-media-icons">
                 <a href="https://www.facebook.com/" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer"> <!-- target="_blank" = opens in an other tab, rel="noopener noreferrer" to improve performance and prevent security vulnerabilities -->
                     <i class="fa-brands fa-square-facebook"></i>

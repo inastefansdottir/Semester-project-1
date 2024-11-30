@@ -11,7 +11,15 @@
     --accent-dark: #747474;
 }
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+.button {
     font-family: "REM", Helvetica, sans-serif;
     font-weight: 400;
 }
@@ -19,7 +27,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.menu {
     font-family: "Gabarito", Helvetica, sans-serif;
     font-weight: 800;
 }
@@ -28,17 +37,139 @@ a {
     text-decoration: none;
 }
 
-/* header */
+.button,
+ footer input{
+    border-style: none;
+    border-radius: 60px;
+    font-size: 16px;
+    padding: 10px 30px;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--primary-light);
+    font-weight: 600;
+}
+
+/* header (navigation menu) */
 .hamburger-icon,
 #menu-checkbox,
 .logo-mobile {
     display: none;
 }
 
-.header-icons {
-    color: var(--primary-light);
+header {
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 5px 100px;
+    box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 100px;
 }
 
 nav ul {
     list-style: none; 
+    display: flex;
+    gap: 50px;
+
+}
+
+nav ul a {
+    color: var(--primary-light);
+}
+
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: var(--primary-light);
+    font-size: 25px;
+}
+
+.fa-ticket {
+    font-size: 30px;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-light);
+    padding: 40px 100px;
+    font-size: 20px;
+}
+
+footer,
+footer input,
+.opening-times,
+.social-media-icons > * {
+    color: var(--primary-color);
+}
+
+
+/* left side of footer */
+.museum-info {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.museum-info h4 {
+    font-size: 48px;
+}
+
+.opening-times {
+    font-weight: 600;
+}
+
+.museum-info address {
+    font-style: normal;
+    width: 350px;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+/* right side of footer */
+.newsletter-section {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#newsletter-heading {
+    font-size: 36px;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer input {
+    padding: 10px 20px;
+    width: 300px;
+}
+
+.social-media-icons {
+    font-size: 40px;
+}
+
+.social-media-icons > * {
+    margin-left: 5px;
 }
