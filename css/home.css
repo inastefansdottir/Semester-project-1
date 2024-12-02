@@ -1,1 +1,229 @@
 @import url('./global.css');
+
+body {
+    background-color: var(--primary-light);
+}
+
+/* Header */
+.menu {
+    background-color: var(--secondary-color);
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url(../images/home/hero-background.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 150px 300px 200px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--primary-light);
+}
+
+.hero-content > * {
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-size: 110px;
+    width: 400px;
+}
+
+.hero-content p {
+    width: 500px;
+    font-size: 24px;
+}
+
+.hero-section img {
+    height: 500px;
+}
+
+/* Exhibition Spaces section */
+.exhibition-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px;
+}
+
+.exhibition-section h2 {
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.exhibition-content {
+    display: flex;
+    gap: 100px;
+    padding: 50px 0px;
+}
+
+.exhibition-card {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.exhibition-card a {
+    color: var(--primary-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exhibition-card h3 {
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-image {
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Explore section */
+.explore-section {
+    background-color: var(--primary-color);
+    padding: 150px 200px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.explore-section > * {
+    color: var(--primary-light);
+}
+
+.explore-content {
+    max-width: 400px;
+}
+
+.explore-content h2 {
+    font-size: 110px;
+    margin-bottom: 10px;
+}
+
+.explore-content section h3,
+.card-section h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.explore-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: var(--primary-light);
+    font-weight: 600;
+}
+
+.explore-image {
+    flex: 1;
+    height: 500px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.explore-card {
+    width: 400px;
+    padding: 35px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+/* Special Events and Exhibitions section */
+.special-events-section {
+    display: flex;
+    padding: 150px 200px;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.special-events-section a h4 {
+    color: var(--primary-color);
+    font-family: "REM", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.special-events-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.special-events-content h2 {
+    color: var(--primary-color);
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.special-events-content h3 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.professor-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.special-events-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-card,
+.professor-card {
+    padding: 35px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.professor-image,
+.news-card img {
+    border-radius: 20px;
+}
+
+.news-card img{
+    width: 330px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    position: relative;
+}
+
+footer::before {
+    content: ""; /* required to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 200px; /* start the line 200px from the left */
+    width: calc(100% - 400px); /* make the line shorter by 200px on each side */
+    border-top: 2px solid rgba(0, 0, 0, 0.2); /* the line */
+}
