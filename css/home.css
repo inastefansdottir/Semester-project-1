@@ -9,15 +9,31 @@ body {
     background-color: var(--secondary-color);
 }
 
+/* Shared layout */
+.hero-container,
+.explore-container,
+.special-events-section {
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto; /* centers the container */
+    padding: 150px 0px;
+}
+
+
 /* Hero section */
 .hero-section {
     background-image: url(../images/home/hero-background.png);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-container {
     display: flex;
     justify-content: space-between;
-    padding: 80px 150px 300px 200px;
+    align-items: center;
 }
 
 .hero-content {
@@ -50,18 +66,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 150px 0px;
+    padding: 150px;
 }
 
 .exhibition-section h2 {
-    font-size: 48px;
+    font-size: 60px;
     color: var(--primary-color);
 }
 
 .exhibition-content {
     display: flex;
     gap: 100px;
-    padding: 50px 0px;
+    padding: 100px 0px 50px 0px;
 }
 
 .exhibition-card {
@@ -94,13 +110,15 @@ body {
 /* Explore section */
 .explore-section {
     background-color: var(--primary-color);
-    padding: 150px 200px;
+}
+
+.explore-container {
     display: flex;
     gap: 50px;
     justify-content: space-between;
 }
 
-.explore-section > * {
+.explore-container > * {
     color: var(--primary-light);
 }
 
@@ -120,7 +138,6 @@ body {
 }
 
 .explore-content p {
-    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -153,7 +170,6 @@ body {
 /* Special Events and Exhibitions section */
 .special-events-section {
     display: flex;
-    padding: 150px 200px;
     justify-content: space-between;
     gap: 60px;
 }
