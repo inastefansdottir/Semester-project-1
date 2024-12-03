@@ -1,1 +1,134 @@
 @import url('./global.css');
+
+body,
+.menu {
+    background-color: var(--primary-light);
+}
+
+/* Shared color */
+nav ul a,
+.header-icons,
+footer,
+.opening-times,
+.info-item,
+.text-content,
+.social-media-icons >* {
+    color: var(--secondary-color);
+}
+
+/* About us */
+.about-section,
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto; /* centers the container */
+    padding: 150px 0px;
+    align-items: center;
+}
+
+.about-section img,
+.content-container img {
+    width: 800px;
+    border-radius: 30px;
+}
+
+.text-content h1 {
+    font-size: 100px;
+}
+
+.text-content p {
+    width: 400px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    color: var(--secondary-color);
+    text-align: right;
+    font-size: 20px;
+    width: 400px;
+}
+
+.text-container > * {
+    margin-bottom: 20px;
+}
+
+/* Get involved section */ 
+.get-involved-section {
+    background-color: var(--secondary-color);
+}
+
+.get-involved-content,
+.info-section {
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto; /* centers the container */
+    padding: 150px 0px;
+    color: var(--primary-light);
+}
+
+.get-involved-content h2 {
+    font-size: 72px;
+}
+
+.get-involved-content h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.get-involved-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.get-involved-content img {
+    max-width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+/* Info section */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+}
+
+.info-item {
+    width: 550px;
+}
+
+.info-item h3 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.internship {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Footer */
+footer {
+    position: relative;
+}
+
+footer::before {
+    content: ""; /* required to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 200px; /* start the line 200px from the left */
+    width: calc(100% - 400px); /* make the line shorter by 200px on each side */
+    border-top: 2px solid rgba(0, 0, 0, 0.2); /* the line */
+}
