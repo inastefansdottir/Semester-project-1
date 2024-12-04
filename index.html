@@ -34,7 +34,14 @@
             </nav>
 
             <div class="header-icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- Hidden checkbox for toggling -->
+                 <input type="checkbox" id="toggle-search" class="search-toggle">
+                 <!-- Label for the search toggle (acts as the magnifying class icon) -->
+                <label for="toggle-search" class="fa-solid fa-magnifying-glass" aria-label="Search"></label>
+
+                <!-- Search input field -->
+                 <input type="text" class="search-input" placeholder="Search...">
+
                 <i class="fa-solid fa-ticket"></i>
             </div>
         </div>

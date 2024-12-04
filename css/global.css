@@ -17,6 +17,11 @@
     box-sizing: border-box;
 }
 
+body {
+    color: var(--primary-color);
+    background-color: var(--primary-light);
+}
+
 body,
 input,
 .button {
@@ -98,7 +103,6 @@ nav ul a {
     color: var(--primary-light);
 }
 
-
 .header-icons {
     display: flex;
     gap: 15px;
@@ -109,6 +113,39 @@ nav ul a {
 
 .fa-ticket {
     font-size: 30px;
+}
+
+/* Search animation */
+.search-toggle {
+    display: none;
+}
+
+.search-input {
+    width: 0; /* initial state: 0 width */
+    opacity: 0; /* makes it invisible by default */
+    border: none;
+    background-color: var(--primary-light);
+    color: var(--accent-dark);
+    border-radius: 30px;
+    transition: width 0.4s ease, opacity 0.3s ease, padding 0.4s ease; /* adds smooth animation for width, opacity and padding changes */
+    position: absolute;
+    right: 285px; /* anchors the input to the right edge of the header container */
+    height: 30px; /* sets a fixed height for the input field */
+    transform-origin: right; /* makes the input's expansion originate from the right edge */
+}
+
+.search-input:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+.fa-magnifying-glass {
+    cursor: pointer;
+}
+
+.search-toggle:checked ~ .search-input {
+    width: 200px;
+    opacity: 1;
+    padding: 0 10px;
 }
 
 

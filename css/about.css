@@ -16,6 +16,11 @@ footer,
     color: var(--secondary-color);
 }
 
+/* header */
+.search-input {
+    border: 2px solid var(--secondary-color);
+}
+
 /* About us */
 .about-section,
 .content-container {

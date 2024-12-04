@@ -1,1 +1,136 @@
 @import url('./global.css');
+
+/* Header */
+.menu {
+    background-color: var(--primary-light);
+}
+
+nav ul a,
+.header-icons {
+    color: var(--primary-color);
+}
+
+.search-input {
+    border: 2px solid var(--primary-color);
+}
+/* Visit page */
+.visit-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto; /* centers the container */
+    padding: 100px 0px;
+}
+
+.visit-content {
+    width: 400px;
+}
+
+.visit-content section {
+    margin-bottom: 40px;
+}
+
+.visit-content h1 {
+    font-size: 100px;
+    color: var(--secondary-color);
+}
+
+.visit-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.visit-content p, address {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+address {
+    font-style: normal;
+}
+
+.info {
+    text-align: right;
+}
+
+.opening-times-content p {
+    font-weight: 600;
+}
+
+/* Contact form section */
+.contact-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact-form-section h2 {
+    font-size: 48px;
+    color: var(--secondary-color);
+}
+
+.contact-form-section h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-form-container {
+    width: calc(100% - 400px);
+    max-width: 700px;
+    padding: 50px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.contact-form > *{
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+.contact-form-content,
+.message {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+.contact-form-content input,
+.message textarea {
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: var(--primary-color);
+}
+
+.contact-form-content input:focus,
+.message textarea:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.message textarea {
+    height: 280px;
+    padding: 20px 20px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+}
+
+footer::before {
+    content: ""; /* required to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 200px; /* start the line 200px from the left */
+    width: calc(100% - 400px); /* make the line shorter by 200px on each side */
+    border-top: 2px solid rgba(0, 0, 0, 0.2); /* the line */
+}
