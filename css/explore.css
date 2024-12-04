@@ -1,1 +1,60 @@
 @import url('./global.css');
+
+body {
+    background-color: var(--primary-color);
+    color: var(--primary-light);
+}
+
+/* Explore page, shared layouts */
+.explore-for-kids,
+.explore-for-teachers,
+.explore-for-researchers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto; /* centers the container */
+    padding: 100px 0px;
+}
+
+.explore-content {
+    width: 400px;
+}
+
+.explore-content h1 {
+    font-size: 100px;
+}
+
+.explore-content h2 {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.explore-content p {
+    margin-bottom: 20px;
+}
+
+/* Explore for kids */
+.explore-for-kids div {
+    width: 600px;
+}
+
+.explore-image-container img {
+    height: 650px;
+    width: 550px;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+/* Explore for teachers, Explore for Researchers */
+.explore-for-teachers img,
+.explore-for-researchers img {
+    width: 800px;
+    border-radius: 30px;
+}
+
+.explore-for-teachers div {
+    text-align: right;
+}
