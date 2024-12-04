@@ -1,1 +1,92 @@
 @import url('./global.css');
+
+/* Header */
+.menu {
+    background-color: var(--primary-light);
+}
+
+nav ul a,
+.header-icons {
+    color: var(--primary-color);
+}
+
+.search-input {
+    border: 2px solid var(--primary-color);
+}
+
+/* Special events page */
+.special-events-section,
+.event-article {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto; /* centers the container */
+    padding: 100px 0px;
+    align-items: center;
+}
+
+/* 1st section */
+.special-events-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.special-events-section h1 {
+    font-size: 68px;
+    text-align: center;
+}
+
+.special-events-section h2 {
+    font-size: 40px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.visiting-professor h3 {
+    font-size: 32px;
+    margin: 100px 0 10px 0;
+}
+
+.visiting-professor p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.visiting-professor img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* second section */
+.event-article img {
+    width: 800px;
+    border-radius: 30px;
+}
+
+.article-content {
+    text-align: right;
+    width: 450px;
+    font-size: 20px;
+}
+
+.event-article h3 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+}
+
+footer::before {
+    content: ""; /* required to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 200px; /* start the line 200px from the left */
+    width: calc(100% - 400px); /* make the line shorter by 200px on each side */
+    border-top: 2px solid rgba(0, 0, 0, 0.2); /* the line */
+}

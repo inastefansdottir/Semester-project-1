@@ -26,11 +26,11 @@ footer,
 .content-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1600px;
     width: calc(100% - 400px); /* ensures 200px padding on both sides */
     margin: 0 auto; /* centers the container */
-    padding: 150px 0px;
-    align-items: center;
+    padding: 100px 0px;
 }
 
 .about-section img,
