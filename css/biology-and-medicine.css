@@ -1,1 +1,57 @@
 @import url('./global.css');
+
+/* header */
+body,
+.menu {
+    background-color: var(--primary-color);
+}
+
+body,
+nav ul a,
+.header-icons {
+    color: var(--primary-light);
+}
+
+.search-input {
+    border: none;
+}
+
+/* biology and medicine page, hero section */
+.hero-section {
+    background-image: url(../images/exhibition/liquid-dropper.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 1000px;
+    align-content: center;
+}
+
+.hero-text {
+    font-size: 48px;
+    width: 600px;
+    margin-left: 200px;
+}
+
+/* info section */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto; /* centers the container */
+    padding: 200px 0;
+    align-items: center;
+}
+
+.info-text {
+    font-size: 24px;
+    width: 400px;
+}
+
+.margin {
+    margin-bottom: 20px;
+}
+
+.align-right {
+    text-align: right;
+}
