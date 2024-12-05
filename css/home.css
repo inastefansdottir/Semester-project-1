@@ -9,6 +9,15 @@ body {
     background-color: var(--secondary-color);
 }
 
+nav ul a,
+.header-icons {
+    color: var(--primary-light);
+}
+
+.search-input {
+    border: none;
+}
+
 /* Shared layout */
 .hero-container,
 .explore-container,
@@ -48,7 +57,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 110px;
+    font-size: 100px;
     width: 400px;
 }
 
@@ -70,7 +79,7 @@ body {
 }
 
 .exhibition-section h2 {
-    font-size: 60px;
+    font-size: 68px;
     color: var(--primary-color);
 }
 

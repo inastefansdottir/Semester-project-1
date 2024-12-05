@@ -1,1 +1,83 @@
 @import url('./global.css');
+
+/* Exhibiton spaces page, hero section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto; /* centers the container */
+    padding: 100px 0px;
+}
+
+.hero-section h1 {
+    font-size: 100px;
+}
+
+.hero-section img {
+    width: 850px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* Exhibiton cards section */
+.exhibition-content {
+    padding: 100px 0px 150px 0px;
+}
+
+.exhibition-content div {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.margin {
+    margin-bottom: 100px;
+}
+
+.exhibition-card {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.exhibition-card a {
+    color: var(--primary-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exhibition-card h2 {
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.exhibition-card img {
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.different-width {
+    width: 150px !important;
+}
+
+/* Footer */
+footer {
+    position: relative;
+}
+
+footer::before {
+    content: ""; /* required to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 200px; /* start the line 200px from the left */
+    width: calc(100% - 400px); /* make the line shorter by 200px on each side */
+    border-top: 2px solid rgba(0, 0, 0, 0.2); /* the line */
+}

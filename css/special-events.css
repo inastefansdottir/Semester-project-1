@@ -1,18 +1,6 @@
 @import url('./global.css');
 
 /* Header */
-.menu {
-    background-color: var(--primary-light);
-}
-
-nav ul a,
-.header-icons {
-    color: var(--primary-color);
-}
-
-.search-input {
-    border: 2px solid var(--primary-color);
-}
 
 /* Special events page */
 .special-events-section,
@@ -22,7 +10,7 @@ nav ul a,
     max-width: 1600px;
     width: calc(100% - 400px); /* ensures 200px padding on both sides */
     margin: 0 auto; /* centers the container */
-    padding: 100px 0px;
+    padding: 100px 0 150px 0;
     align-items: center;
 }
 

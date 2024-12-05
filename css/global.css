@@ -83,7 +83,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--primary-light);
     padding: 5px 200px;
     box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.2);
 }
@@ -99,15 +99,15 @@ nav ul {
 
 }
 
-nav ul a {
-    color: var(--primary-light);
+nav ul a,
+.header-icons {
+    color: var(--primary-color);
 }
 
 .header-icons {
     display: flex;
     gap: 15px;
     align-items: center;
-    color: var(--primary-light);
     font-size: 25px;
 }
 
@@ -126,6 +126,7 @@ nav ul a {
     border: none;
     background-color: var(--primary-light);
     color: var(--accent-dark);
+    border: 2px solid var(--primary-color);
     border-radius: 30px;
     transition: width 0.4s ease, opacity 0.3s ease, padding 0.4s ease; /* adds smooth animation for width, opacity and padding changes */
     position: absolute;
