@@ -15,6 +15,16 @@ nav ul a,
     color: var(--primary-light);
 }
 
+@media (hover: hover) {
+    nav ul a:hover {
+        color: var(--accent-color);
+    }
+}
+
+.current {
+    color: var(--accent-color);
+}
+
 .search-input {
     border: none;
 }

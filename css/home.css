@@ -14,6 +14,12 @@ nav ul a,
     color: var(--primary-light);
 }
 
+@media (hover: hover) {
+    nav ul a:hover {
+        color: var(--primary-color);
+    }
+}
+
 .search-input {
     border: none;
 }
@@ -93,6 +99,7 @@ nav ul a,
     background-color: var(--primary-color);
     padding: 30px;
     border-radius: 30px;
+    transition: background-color 0.4s ease, transform 0.4s ease;
 }
 
 .exhibition-card a {
@@ -107,6 +114,18 @@ nav ul a,
     width: 200px;
     text-align: center;
     margin-top: 20px;
+}
+
+@media (hover: hover) {
+    .exhibition-card:hover {
+        background-color: var(--primary-light);
+        outline: 2px solid var(--primary-color);
+        transform: scale(1.05);
+    }
+
+    .exhibition-card:hover h3 {
+        color: var(--primary-color);
+    }
 }
 
 .card-image {
@@ -174,6 +193,18 @@ nav ul a,
     padding: 35px;
     box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
+    transition: transform 0.4s ease;
+}
+
+@media (hover: hover) {
+    .explore-card:hover {
+        outline: 2px solid var(--primary-light);
+        transform: scale(1.05);
+    }
+
+    .read-more:hover {
+        text-decoration: underline;
+    }
 }
 
 /* Special Events and Exhibitions section */
@@ -226,6 +257,7 @@ nav ul a,
     padding: 35px;
     box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
+    transition: transform 0.4s ease;
 }
 
 .professor-image,
@@ -237,6 +269,14 @@ nav ul a,
     width: 330px;
     height: 200px;
     object-fit: cover;
+}
+
+@media (hover: hover) {
+    .news-card:hover,
+    .professor-card:hover {
+        outline: 2px solid var(--primary-color);
+        transform: scale(1.05);
+    }
 }
 
 /* Footer */

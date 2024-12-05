@@ -17,6 +17,16 @@ footer,
 }
 
 /* header */
+.current {
+    color: var(--primary-color);
+}
+
+@media (hover: hover) {
+    nav ul a:hover {
+        color: var(--primary-color);
+    }
+}
+
 .search-input {
     border: 2px solid var(--secondary-color);
 }

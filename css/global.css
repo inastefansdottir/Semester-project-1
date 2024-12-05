@@ -40,6 +40,7 @@ h4,
 
 a {
     text-decoration: none;
+    color: var(--primary-light);
 }
 
 /* Button styles */
@@ -56,6 +57,27 @@ a {
     color: var(--primary-light);
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background-color: var(--primary-light);
+        color: var(--primary-color);
+        outline: 2px solid var(--primary-color);
+    }
+
+    .cream-orange-button:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-light);
+        outline: 2px solid var(--primary-light);
+    }
+
+    .orange-button:hover {
+        background-color: var(--primary-light);
+        color: var(--secondary-color);
+        outline: 2px solid var(--secondary-color);
+    }
 }
 
 .cream-orange-button {
@@ -102,6 +124,16 @@ nav ul {
 nav ul a,
 .header-icons {
     color: var(--primary-color);
+}
+
+.current {
+    color: var(--secondary-color);
+}
+
+@media (hover: hover) {
+    nav ul a:hover {
+        color: var(--secondary-color);
+    }
 }
 
 .header-icons {
@@ -183,6 +215,12 @@ footer input,
     font-weight: 600;
 }
 
+@media (hover: hover) {
+    .opening-times:hover {
+        text-decoration: 2px solid underline;
+    }
+}
+
 .museum-info address {
     font-style: normal;
     width: 350px;
@@ -210,6 +248,14 @@ footer input,
     gap: 20px;
 }
 
+.newsletter-form > * {
+    margin-left: 10px;
+}
+
+#email:focus {
+    outline: 2px solid var(--primary-color);
+}
+
 footer input {
     padding: 10px 20px;
     width: 300px;
@@ -221,4 +267,10 @@ footer input {
 
 .social-media-icons > * {
     margin-left: 5px;
+}
+
+@media (hover: hover) {
+    .social-media-icons > *:hover {
+        color: var(--secondary-color);
+    }
 }
