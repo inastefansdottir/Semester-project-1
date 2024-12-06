@@ -5,7 +5,7 @@ body {
 }
 
 /* Header */
-.menu {
+.navigation {
     background-color: var(--secondary-color);
 }
 

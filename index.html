@@ -14,36 +14,46 @@
 <body>
     <header>
         <div class="menu">
-
             <input type="checkbox" id="menu-checkbox">
             <label for="menu-checkbox" class="hamburger-icon" aria-label="Open menu">
                 <i class="fa-solid fa-bars"></i>
             </label>
 
-            <a href="./">
-                <img src="images/shared/logo-cream.png" alt="Community Science Museum logo" class="logo">
+            <div class="navigation">
+                <a href="./">
+                    <img src="images/shared/logo-cream.png" alt="Community Science Museum logo" class="logo">
+                </a>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="./explore/">Explore</a></li>
+                        <li><a href="./special-events/">Special events</a></li>
+                        <li><a href="./exhibition-spaces/">Exhibition Spaces</a></li>
+                        <li><a href="./about/">About</a></li>
+                        <li><a href="./visit/">Visit</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                    <!-- Hidden checkbox for toggling -->
+                    <input type="checkbox" id="toggle-search" class="search-toggle">
+                    <!-- Label for the search toggle (acts as the magnifying class icon) -->
+                    <label for="toggle-search" class="fa-solid fa-magnifying-glass" aria-label="Search"></label>
+
+                    <!-- Search input field -->
+                    <input type="text" class="search-input" placeholder="Search...">
+
+                    <i class="fa-solid fa-ticket"></i>
+                </div>
+            </div>
+
+            <a href="./" class="logo-mobile">
+                <img src="./images/shared/mobile-logo-red.png" alt="Community Science Museum logo">
             </a>
 
-            <nav>
-                <ul>
-                    <li><a href="./explore/">Explore</a></li>
-                    <li><a href="./special-events/">Special events</a></li>
-                    <li><a href="./exhibition-spaces/">Exhibition Spaces</a></li>
-                    <li><a href="./about/">About</a></li>
-                    <li><a href="./visit/">Visit</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-icons">
-                <!-- Hidden checkbox for toggling -->
-                 <input type="checkbox" id="toggle-search" class="search-toggle">
-                 <!-- Label for the search toggle (acts as the magnifying class icon) -->
-                <label for="toggle-search" class="fa-solid fa-magnifying-glass" aria-label="Search"></label>
-
-                <!-- Search input field -->
-                 <input type="text" class="search-input" placeholder="Search...">
-
-                <i class="fa-solid fa-ticket"></i>
+            <div class="icon-mobile-section">
+                <i class="fa-solid fa-magnifying-glass icon-mobile"></i>
+                <i class="fa-solid fa-ticket icon-mobile"></i>
             </div>
         </div>
     </header>
