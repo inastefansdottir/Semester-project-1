@@ -1,4 +1,5 @@
 @import url('./global.css');
+@import url('./global-media.css');
 
 body {
     background-color: var(--primary-light);
@@ -33,7 +34,6 @@ nav ul a,
     margin: 0 auto; /* centers the container */
     padding: 150px 0px;
 }
-
 
 /* Hero section */
 .hero-section {
@@ -277,18 +277,4 @@ nav ul a,
         outline: 2px solid var(--primary-color);
         transform: scale(1.05);
     }
-}
-
-/* Footer */
-footer {
-    position: relative;
-}
-
-footer::before {
-    content: ""; /* required to create the pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 200px; /* start the line 200px from the left */
-    width: calc(100% - 400px); /* make the line shorter by 200px on each side */
-    border-top: 2px solid rgba(0, 0, 0, 0.2); /* the line */
 }

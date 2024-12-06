@@ -1,0 +1,279 @@
+@media (max-width: 1750px) {
+    /* hero section */
+    .hero-content > * {
+        margin-bottom: 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 68px;
+        width: 400px;
+    }
+    
+    .hero-content p {
+        width: 350px;
+        font-size: 20px;
+    }
+    
+    .hero-section img {
+        height: 300px;
+    }
+
+    /* exhibition spaces section */
+    .exhibition-section {
+        padding: 100px;
+    }
+    
+    .exhibition-section h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+    
+    .exhibition-content {
+        gap: 50px;
+        padding: 50px 0px 50px 0px;
+    }
+    
+    .exhibition-card {
+        padding: 20px;
+    }
+    
+    .exhibition-card h3 {
+        font-size: 24px;
+    }
+    
+    .card-image {
+        height: 150px;
+        width: 200px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 1600px) { 
+    /* explore section */
+    .explore-content {
+        max-width: 300px;
+    }
+    
+    .explore-content h2 {
+        font-size: 68px;
+    }
+    
+    .explore-content section h3,
+    .card-section h3 {
+        font-size: 24px;
+    }
+    
+    .explore-image {
+        height: 470px;
+    }
+    
+    .explore-card {
+        width: 268px;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+    .explore-card p {
+        font-size: 14px;
+    }
+
+    /* special events section */
+    .news-text {
+        width: 200px;
+        text-align: center;
+    }
+
+    .special-events-content h2 {
+        font-size: 36px;
+    }
+    
+    .professor-image {
+        height: 380px;
+    }
+    
+    .news-card,
+    .professor-card {
+        padding: 20px;
+        border-radius: 30px;
+    }
+    
+    .professor-image,
+    .news-card img {
+        border-radius: 20px;
+    }
+    
+    .news-card img{
+        width: 220px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1300px) {
+    .hero-container,
+    .explore-container,
+    .special-events-section {
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width: 1020px) {
+    /* hero section */
+    .hero-container {
+        padding: 100px 0px 250px 0px;
+    }
+    
+    .hero-content h1 {
+        font-size: 48px;
+        width: 250px;
+    }
+        
+    .hero-content p {
+        width: 250px;
+        font-size: 16px;
+    }
+        
+    .hero-section img {
+        height: 270px;
+    }
+
+    /* shared layout */
+    .explore-container,
+    .special-events-section {
+        max-width: 400px;
+    }
+    
+    /* exhibition spaces section */
+    .exhibition-content {
+        flex-direction: column;
+    }
+        
+    .exhibition-card {
+        padding: 30px;
+    }
+        
+    .exhibition-card h3 {
+        font-size: 24px;
+    }
+        
+    .card-image {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* explore section */
+    .explore-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explore-content {
+        max-width: 100%;
+    }
+    
+    .explore-content h2 {
+        font-size: 48px;
+    }
+    
+    .explore-image {
+        height: 500px;
+        max-width: 100%;
+    }
+    
+    .card-section {
+        gap: 50px;
+    } 
+    
+    .explore-card {
+        width: 100%;
+    }
+
+    /* special events section */
+    .special-events-section {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .special-events-section a h4 {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .professor-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .special-events-cards {
+        gap: 50px;
+    }
+    
+    .news-card img{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    /* shared layout */
+    .hero-container,
+    .explore-container,
+    .special-events-section {
+        width: calc(100% - 60px);
+    }
+
+    /* menu */
+    .menu {
+        background-color: var(--secondary-color);
+    }
+
+    /* Hamburger menu */
+    .hamburger-icon {
+        color: var(--primary-light);
+    }
+
+    .icon-mobile-section {
+        color: var(--primary-light);
+    }
+
+    /* hero section */
+    .hero-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .hero-content {
+        width: 100%;
+        max-width: 380px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 48px;
+        width: 100%;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .hero-section img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    /* exhibition section */
+    .exhibition-section {
+        padding: 100px 40px;
+    }
+
+    .exhibition-content {
+        max-width: 400px;
+    }
+}

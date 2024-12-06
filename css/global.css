@@ -99,6 +99,7 @@ a {
 header {
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navigation {
@@ -118,7 +119,6 @@ nav ul {
     list-style: none; 
     display: flex;
     gap: 50px;
-
 }
 
 nav ul a,
