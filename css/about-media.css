@@ -1,8 +1,5 @@
 @media (max-width: 1680px) {
-    .text-content h1 {
-        font-size: 68px;
-    }
-
+    /* Shared layouts */
     .about-section img,
     .content-container img {
         width: 500px;
@@ -15,6 +12,11 @@
         font-size: 16px
     }
 
+    /* Hero section */
+    .text-content h1 {
+        font-size: 68px;
+    }
+
     .text-content {
         width: 300px;
     }
@@ -23,7 +25,7 @@
         width: 350px;
     }
 
-    /* get involved section */
+    /* Get involved section */
     .get-involved-content h2 {
         font-size: 68px;
     }
@@ -36,7 +38,7 @@
         height: 600px;
     }
 
-    /* info section */
+    /* Info section */
     .info-item {
         width: 500px;
     }
@@ -47,6 +49,7 @@
 }
 
 @media (max-width: 1300px) {
+    /* Shared layouts */
     .about-section,
     .content-container,
     .get-involved-content,
@@ -57,12 +60,13 @@
 }
 
 @media (max-width: 1000px) {
-    .text-content h1 {
-        font-size: 48px;
-    }
-
+    /* Hero section */
     .about-section img {
         width: 400px;
+    }
+
+    .text-content h1 {
+        font-size: 48px;
     }
 
     .content-container img {
@@ -75,6 +79,7 @@
         margin-left: 50px;
     }
 
+    /* Get involved section */
     .get-involved-content img {
         height: 500px;
     }
@@ -86,7 +91,7 @@
         color: var(--secondary-color);
     }
 
-    /* about page */
+    /* Shared layouts */
     .about-section,
     .content-container,
     .get-involved-content,
@@ -96,11 +101,6 @@
         gap: 30px;
         max-width: 500px;
         padding: 50px 0;
-    }
-
-    .content-container {
-        flex-direction: column-reverse;
-        padding: 0 0 50px 0;
     }
 
     .text-content,
@@ -113,6 +113,7 @@
         margin: 0;
     }
 
+    /* Hero section */
     .about-section h1 {
         text-align: center;
         margin-bottom: 30px;
@@ -122,10 +123,16 @@
         text-align: center;
     }
 
+    .content-container {
+        flex-direction: column-reverse;
+        padding: 0 0 50px 0;
+    }
+
     .text-container {
         text-align: left;
     }
 
+    /* Get involved section */
     .get-involved-content h2 {
         font-size: 48px;
         text-align: center;
@@ -136,6 +143,7 @@
         height: 250px;
     }
 
+    /* Info section */
     .info-section {
         height: 700px;
     }

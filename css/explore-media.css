@@ -95,8 +95,4 @@
     .menu {
         background-color: var(--primary-color);
     }
-
-    .current {
-        color: var(--accent-color) !important;
-    }
 }

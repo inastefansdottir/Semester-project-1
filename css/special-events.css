@@ -1,7 +1,4 @@
-@import url('./global.css');
-@import url('./global-media.css');
-
-/* Special events page */
+/* Shared layout */
 .special-events-section,
 .event-article {
     display: flex;
@@ -47,19 +44,19 @@
     border-radius: 30px;
 }
 
-/* second section, third section */
+/* 2nd and 3rd section */
 .event-article img {
     width: 800px;
     border-radius: 30px;
+}
+
+.event-article h3 {
+    font-size: 32px;
+    margin-bottom: 5px;
 }
 
 .article-content {
     text-align: right;
     width: 450px;
     font-size: 20px;
-}
-
-.event-article h3 {
-    font-size: 32px;
-    margin-bottom: 5px;
 }

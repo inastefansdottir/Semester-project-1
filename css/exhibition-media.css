@@ -1,4 +1,5 @@
 @media (max-width: 1750px) {
+    /* Hero section */
     .hero-section h1 {
         font-size: 68px;
         max-width: 400px;
@@ -11,9 +12,10 @@
 }
 
 @media (max-width: 1680px) {
+    /* Exhibition cards section */
     .exhibition-content {
         gap: 20px;
-        padding: 50px 0px 50px 0px;
+        padding: 50px 0 50px 0;
     }
 
     .exhibition-content div {
@@ -39,6 +41,7 @@
 }
 
 @media (max-width: 1450px) {
+    /* Hero section */
     .hero-section {
         max-width: 1000px;
         width: calc(100% - 100px);
@@ -51,6 +54,7 @@
 }
 
 @media (max-width: 950px) {
+    /* Hero section */
     .hero-section {
         justify-content: center;
         padding: 50px 0;
@@ -66,10 +70,12 @@
 }
 
 @media (max-width: 870px) {
+    /* Hero section */
     .hero-section h1 {
         font-size: 48px;
     }
 
+    /* Exhibition cards section */
     .exhibition-content {
         max-width: 500px;
         width: calc(100% - 60px);

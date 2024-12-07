@@ -88,7 +88,7 @@ a {
     background-color: var(--secondary-color);
 }
 
-/* header (navigation menu) */
+/* Header (navigation menu) */
 .hamburger-icon,
 #menu-checkbox,
 .logo-mobile,
@@ -108,7 +108,7 @@ header {
     align-items: center;
     background-color: var(--primary-light);
     padding: 5px 200px;
-    box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -182,7 +182,7 @@ nav ul a,
 }
 
 
-/* footer */
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -199,7 +199,7 @@ footer input,
 }
 
 
-/* left side of footer */
+/* Left side of footer */
 .museum-info {
     width: 500px;
     display: flex;
@@ -230,7 +230,7 @@ footer input,
     font-weight: 600;
 }
 
-/* right side of footer */
+/* Right side of footer */
 .newsletter-section {
     text-align: right;
     display: flex;

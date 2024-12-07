@@ -1,6 +1,3 @@
-@import url('./global.css');
-@import url('global-media.css');
-
 /* header */
 body,
 .navigation {
@@ -23,7 +20,7 @@ nav ul a,
     border: none;
 }
 
-/* biology and medicine page, hero section */
+/* Hero section */
 .hero-section {
     background-image: url(../images/exhibition/liquid-dropper.jpg);
     background-size: cover;
@@ -38,7 +35,7 @@ nav ul a,
     margin-left: 200px;
 }
 
-/* info section */
+/* Info section */
 .info-section {
     display: flex;
     justify-content: space-between;
@@ -61,87 +58,4 @@ nav ul a,
 
 .align-right {
     text-align: right;
-}
-
-@media (max-width: 1700px) {
-    .hero-text h1 {
-        font-size: 58px;
-        width: 350px;
-    }
-
-    .info-section img {
-        width: 300px;
-    }
-
-    .info-text {
-        font-size: 20px;
-        width: 300px;
-    }
-}
-
-@media (max-width: 1450px) {
-    .hero-section {
-        height: 600px;
-    }
-
-    /* dark overlay */
-    .hero-overlay {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .hero-text h1{
-        margin: 0;
-    }
-}
-
-@media (max-width: 1300px) {
-    .info-section {
-        max-width: 1000px;
-        width: calc(100% - 100px);
-    }
-}
-
-@media (max-width: 1000px) {
-    .info-section img {
-        width: 200px;
-    }
-
-    .info-text {
-        font-size: 16px;
-        width: 250px;
-    }
-}
-
-@media (max-width: 830px) {
-    /* header */
-    .menu {
-        background-color: var(--primary-color);
-    }
-
-    /* main content */
-    .hero-text h1 {
-        font-size: 40px;
-    }
-
-    .info-section {
-        flex-direction: column;
-        max-width: 500px;
-        width: calc(100% - 60px);
-        padding: 100px 0;
-        gap: 70px;
-    }
-
-    .info-text {
-        width: 100%;
-    }
-
-    .align-right {
-        text-align: left;
-    }
 }

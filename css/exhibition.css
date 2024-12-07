@@ -1,7 +1,4 @@
-@import url('./global.css');
-@import url('global-media.css');
-
-/* Exhibiton spaces page, hero section */
+/* Hero section */
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -9,7 +6,7 @@
     max-width: 1600px;
     width: calc(100% - 400px); /* ensures 200px padding on both sides */
     margin: 0 auto; /* centers the container */
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 
 .hero-section h1 {
@@ -25,7 +22,7 @@
 
 /* Exhibiton cards section */
 .exhibition-content {
-    padding: 100px 0px 150px 0px;
+    padding: 100px 0 150px 0;
 }
 
 .exhibition-content div {
@@ -80,14 +77,4 @@
 
 .different-width {
     width: 150px !important;
-}
-
-@media (max-width: 1680px) {
-    .hero-section img,
-    .exhibition-card img {
-        width: 700px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 30px;
-    }
 }

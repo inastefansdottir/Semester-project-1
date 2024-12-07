@@ -1,5 +1,5 @@
 @media (max-width: 1450px) {
-    /* footer */
+    /* Footer */
     footer {
         font-size: 16px;
     }
@@ -17,7 +17,7 @@
         width: 300px;
     }
     
-    /* right side of footer */
+    /* Fight side of footer */
     #newsletter-heading {
         font-size: 24px;
     }
@@ -43,7 +43,7 @@
 }
 
 @media (max-width: 1300px) {
-    /* header */
+    /* Header */
     .navigation {
         padding: 5px 50px;
     }
@@ -57,7 +57,7 @@
         right: 135px;
     }
 
-    /* footer */
+    /* Footer */
     footer {
         padding: 100px 50px;
     }
@@ -86,13 +86,14 @@
         display: flex;
         justify-content: space-between;
         padding: 15px 30px;
-        box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
         background-color: var(--primary-light);
     }
 
     .navigation {
-        position: absolute;
         background: linear-gradient(1deg, var(--primary-color) 20%, var(--secondary-color) 100%);
+        position: absolute;
+        align-items: flex-start;
         top: 0;
         left: 0;
         height: 100vh;
@@ -100,7 +101,6 @@
         z-index: 9;
         transition: transform 0.3s ease-in-out;
         transform: translateX(-100%);
-        align-items: flex-start;
     }
 
     /* Hamburger menu */
@@ -149,7 +149,7 @@
         position: relative;
     }
 
-    /* footer */
+    /* Footer */
     footer {
         flex-direction: column;
         width: 100%;
@@ -159,7 +159,7 @@
         font-size: 20px;
     }
 
-    /* left side of footer */
+    /* Left side of footer */
     .museum-info h4 {
         font-size: 36px;
         width: 100%;
@@ -176,7 +176,7 @@
         max-width: 500px;
     }
     
-    /* right side of footer */
+    /* Right side of footer */
     .newsletter-section {
         text-align: left;
         align-items: center;
