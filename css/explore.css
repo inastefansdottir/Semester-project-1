@@ -27,7 +27,7 @@ nav ul a,
     border: none;
 }
 
-/* Explore page, shared layouts */
+/* Explore page, Shared layouts */
 .explore-for-kids,
 .explore-for-teachers,
 .explore-for-researchers {
@@ -65,7 +65,7 @@ nav ul a,
     border-radius: 30px;
 }
 
-/* Explore for teachers, Explore for Researchers */
+/* Explore for teachers, Explore for researchers */
 .explore-for-teachers img,
 .explore-for-researchers img {
     width: 800px;

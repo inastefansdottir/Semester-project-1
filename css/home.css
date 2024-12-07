@@ -175,7 +175,7 @@ nav ul a,
     flex: 1;
     height: 500px;
     object-fit: cover;
-    max-width: 100%;
+    width: 100%;
     border-radius: 30px;
 }
 
