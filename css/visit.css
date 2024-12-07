@@ -1,4 +1,5 @@
 @import url('./global.css');
+@import url('global-media.css');
 
 /* Visit page */
 .visit-section {
@@ -28,12 +29,12 @@
     margin-bottom: 10px;
 }
 
-.visit-content p, address {
+.visit-content p, .visit-content address {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-address {
+.visit-content address {
     font-style: normal;
 }
 
@@ -66,7 +67,7 @@ address {
 
 .contact-form-container {
     width: calc(100% - 400px);
-    max-width: 700px;
+    max-width: 650px;
     padding: 50px;
     box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
@@ -106,4 +107,74 @@ address {
 .message textarea {
     height: 280px;
     padding: 20px 20px;
+}
+
+@media (max-width: 1300px) {
+    .visit-section,
+    .contact-form-container {
+        max-width: 1000px;
+        width: calc(100% - 100px);
+        gap: 50px;
+    }
+
+    .contact-form-container {
+        max-width: 650px;
+    }
+
+    .visit-content h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .visit-content p, .visit-content address {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 760px) {
+    .visit-content h1 {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .visit-section {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .visit-section,
+    .contact-form-section {
+        padding: 50px 0;
+    }
+
+    .visit-section,
+    .contact-form-container {
+        max-width: 500px;
+        width: calc(100% - 60px);
+    }
+    
+    .visit-content {
+        width: 100%;
+    }
+
+    .contact-form-container {
+        padding: 40px 40px 20px 40px;
+    }
+
+    .message textarea {
+        height: 180px;
+    }
+
+    .contact-form-section h2 {
+        font-size: 40px;
+    }
+    
+    .contact-form-section h3 {
+        font-size: 24px;
+    }
+    
+    .info {
+        text-align: left;
+    }
 }

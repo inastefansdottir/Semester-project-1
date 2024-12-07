@@ -123,7 +123,6 @@ footer,
     margin-bottom: 10px;
 }
 
-
 .internship {
     text-align: right;
     display: flex;
@@ -131,3 +130,7 @@ footer,
     justify-content: flex-end;
 }
 
+/* footer */
+#email:focus {
+    outline: 2px solid var(--secondary-color);
+}

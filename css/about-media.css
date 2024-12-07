@@ -93,9 +93,14 @@
     .info-section {
         flex-direction: column;
         width: calc(100% - 60px);
-        gap: 50px;
+        gap: 30px;
         max-width: 500px;
         padding: 50px 0;
+    }
+
+    .content-container {
+        flex-direction: column-reverse;
+        padding: 0 0 50px 0;
     }
 
     .text-content,
@@ -111,6 +116,14 @@
     .about-section h1 {
         text-align: center;
         margin-bottom: 30px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .text-container {
+        text-align: left;
     }
 
     .get-involved-content h2 {
