@@ -63,7 +63,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
     /* Displays */
     .header-icons,
     .logo {
@@ -87,6 +87,7 @@
         justify-content: space-between;
         padding: 15px 30px;
         box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.2);
+        background-color: var(--primary-light);
     }
 
     .navigation {
@@ -117,6 +118,11 @@
 
     .nav-links a {
         color: var(--primary-light);
+    }
+
+    
+    .current {
+        color: var(--accent-color) !important;
     }
 
     /* Logo mobile */
@@ -167,7 +173,7 @@
     .newsletter-section {
         width: 100%;
         width: calc(100% - 60px);
-        max-width: 400px;
+        max-width: 500px;
     }
     
     /* right side of footer */

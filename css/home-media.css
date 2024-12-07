@@ -217,12 +217,13 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
     /* shared layout */
     .hero-container,
     .explore-container,
     .special-events-section {
         width: calc(100% - 60px);
+        max-width: 500px;
     }
 
     /* menu */
