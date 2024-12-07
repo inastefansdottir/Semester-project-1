@@ -1,0 +1,96 @@
+@media (max-width: 1750px) {
+    .hero-section h1 {
+        font-size: 68px;
+        max-width: 400px;
+    }
+    
+    .hero-section img {
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .exhibition-content {
+        gap: 20px;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .exhibition-content div {
+        gap: 50px;
+    }
+
+    .margin {
+        margin-bottom: 50px;
+    }
+    
+    .exhibition-card {
+        padding: 20px;
+    }
+    
+    .exhibition-card h2 {
+        font-size: 24px;
+    }
+
+    .exhibition-card img {
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .hero-section {
+        max-width: 1000px;
+        width: calc(100% - 100px);
+    }
+
+    .hero-section img {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 950px) {
+    .hero-section {
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    .hero-section img {
+        display: none;
+    }
+
+    .hero-section h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 870px) {
+    .hero-section h1 {
+        font-size: 48px;
+    }
+
+    .exhibition-content {
+        max-width: 500px;
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        padding: 0 0 50px 0;
+    }
+
+    .exhibition-content > * {
+        flex-direction: column;
+    }
+        
+    .exhibition-card {
+        padding: 30px;
+    }
+        
+    .exhibition-card h2 {
+        font-size: 24px;
+    }
+        
+    .exhibition-card img {
+        height: 250px;
+        width: 100%;
+    }
+}

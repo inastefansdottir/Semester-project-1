@@ -1,0 +1,129 @@
+@media (max-width: 1680px) {
+    .text-content h1 {
+        font-size: 68px;
+    }
+
+    .about-section img,
+    .content-container img {
+        width: 500px;
+    }
+
+    .text-content p,
+    .text-container,
+    .get-involved-content p,
+    .info-item p {
+        font-size: 16px
+    }
+
+    .text-content {
+        width: 300px;
+    }
+
+    .text-container {
+        width: 350px;
+    }
+
+    /* get involved section */
+    .get-involved-content h2 {
+        font-size: 68px;
+    }
+
+    .get-involved-content h3 {
+        font-size: 24px;
+    }
+
+    .get-involved-content img {
+        height: 600px;
+    }
+
+    /* info section */
+    .info-item {
+        width: 500px;
+    }
+
+    .info-item h3 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .about-section,
+    .content-container,
+    .get-involved-content,
+    .info-section {
+        max-width: 1000px;
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .text-content h1 {
+        font-size: 48px;
+    }
+
+    .about-section img {
+        width: 400px;
+    }
+
+    .content-container img {
+        height: 300px;
+        width: 350px;
+        object-fit: cover;
+    }
+
+    .text-container {
+        margin-left: 50px;
+    }
+
+    .get-involved-content img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 830px) {
+    /* menu */
+    .icon-mobile-section {
+        color: var(--secondary-color);
+    }
+
+    /* about page */
+    .about-section,
+    .content-container,
+    .get-involved-content,
+    .info-section {
+        flex-direction: column;
+        width: calc(100% - 60px);
+        gap: 50px;
+        max-width: 500px;
+        padding: 50px 0;
+    }
+
+    .text-content,
+    .about-section img,
+    .content-container img,
+    .text-container,
+    .info-item {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .about-section h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .get-involved-content h2 {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .get-involved-content img {
+        height: 250px;
+    }
+
+    .info-section {
+        height: 700px;
+    }
+}

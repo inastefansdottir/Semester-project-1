@@ -1,4 +1,5 @@
 @import url('./global.css');
+@import url('global-media.css');
 
 body,
 .menu {
@@ -53,8 +54,13 @@ footer,
     font-size: 100px;
 }
 
-.text-content p {
-    width: 400px;
+.text-content {
+    width: 450px;
+}
+
+.text-content p,
+.get-involved-content p,
+.info-item p {
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -93,11 +99,6 @@ footer,
     margin-bottom: 10px;
 }
 
-.get-involved-content p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
 .get-involved-content img {
     max-width: 100%;
     height: 700px;
@@ -122,10 +123,6 @@ footer,
     margin-bottom: 10px;
 }
 
-.info-item p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
 
 .internship {
     text-align: right;
@@ -133,3 +130,4 @@ footer,
     flex-direction: column;
     justify-content: flex-end;
 }
+
