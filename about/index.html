@@ -23,30 +23,32 @@
             </label>
 
             <div class="navigation">
-                <a href="../">
-                    <img src="../images/shared/logo-orange.png" alt="Community Science Museum logo" class="logo">
-                </a>
+                <div class="navigation-wrapper">
+                    <a href="../">
+                        <img src="../images/shared/logo-orange.png" alt="Community Science Museum logo" class="logo">
+                    </a>
 
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="../explore/">Explore</a></li>
-                        <li><a href="../special-events/">Special events</a></li>
-                        <li><a href="../exhibition-spaces/">Exhibition Spaces</a></li>
-                        <li><a href="../about/" class="current">About</a></li>
-                        <li><a href="../visit/">Visit</a></li>
-                    </ul>
-                </nav>
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="../explore/">Explore</a></li>
+                            <li><a href="../special-events/">Special events</a></li>
+                            <li><a href="../exhibition-spaces/">Exhibition Spaces</a></li>
+                            <li><a href="../about/" class="current">About</a></li>
+                            <li><a href="../visit/">Visit</a></li>
+                        </ul>
+                    </nav>
 
-                <div class="header-icons">
-                    <!-- Hidden checkbox for toggling -->
-                    <input type="checkbox" id="toggle-search" class="search-toggle">
-                    <!-- Label for the search toggle (acts as the magnifying class icon) -->
-                    <label for="toggle-search" class="fa-solid fa-magnifying-glass" aria-label="Search"></label>
+                    <div class="header-icons">
+                        <!-- Hidden checkbox for toggling -->
+                        <input type="checkbox" id="toggle-search" class="search-toggle">
+                        <!-- Label for the search toggle (acts as the magnifying class icon) -->
+                        <label for="toggle-search" class="fa-solid fa-magnifying-glass" aria-label="Search"></label>
 
-                    <!-- Search input field -->
-                    <input type="text" class="search-input" placeholder="Search...">
+                        <!-- Search input field -->
+                        <input type="text" class="search-input" placeholder="Search...">
 
-                    <i class="fa-solid fa-ticket"></i>
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
                 </div>
             </div>
 
@@ -124,41 +126,43 @@
     </main>
 
     <footer aria-label="Museum footer">
-        <section class="museum-info">
-            <h4>Community Science Museum</h4>
-            <a href="../visit/" class="opening-times">See all opening times</a>
-            <address>The museum is located at: Brynjulf Bulls plass 3, 0250 Oslo</address>
-            <p><strong class="bold-text">Phone: </strong>+00 00 00 00</p>
-        </section>
+        <div class="footer-wrapper">
+            <section class="museum-info">
+                <h4>Community Science Museum</h4>
+                <a href="../visit/" class="opening-times">See all opening times</a>
+                <address>The museum is located at: Brynjulf Bulls plass 3, 0250 Oslo</address>
+                <p><strong class="bold-text">Phone: </strong>+00 00 00 00</p>
+            </section>
 
-        <section class="newsletter-section">
-            <div class="newsletter-container">
-                <h5 id="newsletter-heading">Sign me up for newsletter!</h5>
-                <form class="newsletter-form">
-                    <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="Your email address"
-                    aria-labelledby="newsletter-heading">
-                    <button class="button orange-button" type="submit" aria-label="Subscribe to our newsletter">Subscribe</button>
-                </form>
-            </div>
-            <div class="social-media-icons">
-                <a href="https://www.facebook.com/" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer"> <!-- target="_blank" = opens in an other tab, rel="noopener noreferrer" to improve performance and prevent security vulnerabilities -->
-                    <i class="fa-brands fa-square-facebook"></i>
-                </a>
-                <a href="https://x.com/" aria-label="Follow us on X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-square-x-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-square-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/" aria-label="Subscribe to our Youtube" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-square-youtube"></i>
-                </a>
-            </div>
-        </section>
+            <section class="newsletter-section">
+                <div class="newsletter-container">
+                    <h5 id="newsletter-heading">Sign me up for newsletter!</h5>
+                    <form class="newsletter-form">
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Your email address"
+                        aria-labelledby="newsletter-heading">
+                        <button class="button orange-button" type="submit" aria-label="Subscribe to our newsletter">Subscribe</button>
+                    </form>
+                </div>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer"> <!-- target="_blank" = opens in an other tab, rel="noopener noreferrer" to improve performance and prevent security vulnerabilities -->
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="https://x.com/" aria-label="Follow us on X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" aria-label="Subscribe to our Youtube" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
     </footer>
 </body>
 </html>

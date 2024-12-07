@@ -43,10 +43,13 @@
 }
 
 @media (max-width: 1300px) {
-    /* Header */
-    .navigation {
-        padding: 5px 50px;
+    .navigation-wrapper,
+    .footer-wrapper {
+        width: calc(100% - 100px);
+        max-width: 1000px;
     }
+
+    /* Header */
 
     nav ul {
         gap: 30px;
@@ -59,7 +62,7 @@
 
     /* Footer */
     footer {
-        padding: 100px 50px;
+        padding: 100px 0;
     }
 }
 
@@ -93,6 +96,7 @@
     .navigation {
         background: linear-gradient(1deg, var(--primary-color) 20%, var(--secondary-color) 100%);
         position: absolute;
+        display: flex;
         align-items: flex-start;
         top: 0;
         left: 0;
@@ -101,6 +105,11 @@
         z-index: 9;
         transition: transform 0.3s ease-in-out;
         transform: translateX(-100%);
+    }
+
+    .navigation-wrapper {
+        margin: 0;
+        width: 100%;
     }
 
     /* Hamburger menu */
@@ -151,6 +160,10 @@
 
     /* Footer */
     footer {
+        padding: 0;
+    }
+
+    .footer-wrapper {
         flex-direction: column;
         width: 100%;
         padding: 100px 0 50px 0;

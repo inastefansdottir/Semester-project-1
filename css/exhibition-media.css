@@ -41,15 +41,17 @@
 }
 
 @media (max-width: 1450px) {
+    .hero-section img {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1300px) {
     /* Hero section */
     .hero-section {
         max-width: 1000px;
         width: calc(100% - 100px);
-    }
-
-    .hero-section img {
-        width: 500px;
-        height: 300px;
     }
 }
 

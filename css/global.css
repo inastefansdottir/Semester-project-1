@@ -102,13 +102,24 @@ header {
     z-index: 1000; /* to avoid the hover state to go over the header */
 }
 
-.navigation {
+/* Shared layouts */
+.navigation-wrapper,
+.footer-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    max-width: 1600px;
+    width: calc(100% - 400px); /* ensures 200px padding on both sides */
+    margin: 0 auto;
+}
+
+.navigation {
     background-color: var(--primary-light);
-    padding: 5px 200px;
+    padding: 5px 0;
     box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation-wrapper {
+    align-items: center;
 }
 
 .logo {
@@ -184,10 +195,12 @@ nav ul a,
 
 /* Footer */
 footer {
-    display: flex;
-    justify-content: space-between;
     background-color: var(--primary-light);
-    padding: 100px 200px;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
     font-size: 20px;
 }
 

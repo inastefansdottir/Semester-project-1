@@ -115,6 +115,7 @@
     .explore-container,
     .special-events-section {
         width: calc(100% - 100px);
+        max-width: 1000px;
     }
 }
 
@@ -269,7 +270,7 @@
 
     /* Exhibition section */
     .exhibition-section {
-        padding: 100px 40px;
+        padding: 100px 30px;
     }
 
     .exhibition-content {
