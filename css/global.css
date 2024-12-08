@@ -1,10 +1,10 @@
 :root {
     /* Primary palette */
-    --primary-color: #FE5C6B;
-    --primary-light: #F3EAE0;
+    --primary-color: #E54352;
+    --primary-light: #F4EFE8;
 
     /* Secondary palette */
-    --secondary-color: #FF9767;
+    --secondary-color: #FF7C40;
 
     /* Accent palette */
     --accent-color: #86DBDC;
@@ -220,7 +220,7 @@ footer input,
     gap: 30px;
 }
 
-.museum-info h4 {
+.museum-text {
     font-size: 48px;
 }
 
