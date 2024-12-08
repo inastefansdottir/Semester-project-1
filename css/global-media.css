@@ -142,6 +142,11 @@
         height: auto;
     }
 
+    .logo-mobile img {
+        width: 40px;
+        height: auto;
+    }
+
     /* Mobile icons */
     .fa-magnifying-glass {
         font-size: 30px;
