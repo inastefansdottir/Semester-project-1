@@ -95,11 +95,12 @@
     padding: 10px 20px;
     border-radius: 30px;
     color: var(--primary-color);
+    outline: 2px solid var(--primary-color);
 }
 
 .contact-form-content input:focus,
 .message textarea:focus {
-    outline: 2px solid var(--primary-color);
+    outline: 2px solid var(--accent-color);
 }
 
 .message textarea {

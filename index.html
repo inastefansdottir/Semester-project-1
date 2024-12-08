@@ -39,15 +39,19 @@
                     </nav>
 
                     <div class="header-icons">
-                        <!-- Hidden checkbox for toggling -->
-                        <input type="checkbox" id="toggle-search" class="search-toggle">
-                        <!-- Label for the search toggle (acts as the magnifying class icon) -->
-                        <label for="toggle-search" class="fa-solid fa-magnifying-glass" aria-label="Search"></label>
+                        <div class="search-container">
+                            <!-- Hidden checkbox for toggling -->
+                            <input type="checkbox" id="toggle-search" class="search-toggle">
+                            <!-- Label for the search toggle (acts as the magnifying class icon) -->
+                            <label for="toggle-search" class="fa-solid fa-magnifying-glass" aria-label="Search"></label>
 
-                        <!-- Search input field -->
-                        <input type="text" class="search-input" placeholder="Search...">
+                            <!-- Search input field -->
+                            <input type="text" class="search-input" placeholder="Search...">
+                        </div>
 
-                        <i class="fa-solid fa-ticket" aria-label="Purchase Tickets"></i>
+                        <a href="#" aria-label="Purchase Tickets" title="Coming soon">
+                            <i class="fa-solid fa-ticket"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -57,8 +61,12 @@
             </a>
 
             <div class="icon-mobile-section">
-                <i class="fa-solid fa-magnifying-glass icon-mobile" aria-label="Search"></i>
-                <i class="fa-solid fa-ticket icon-mobile" aria-label="Purchase Tickets"></i>
+                <a href="#" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass icon-mobile" aria-label="Search"></i>
+                </a>
+                <a href="#" aria-label="Purchase Tickets" title="Coming soon">
+                    <i class="fa-solid fa-ticket icon-mobile" aria-label="Purchase Tickets"></i>
+                </a>
             </div>
         </div>
     </header>

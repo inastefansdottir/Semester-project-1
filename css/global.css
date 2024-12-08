@@ -152,6 +152,7 @@ nav ul a,
     gap: 15px;
     align-items: center;
     font-size: 25px;
+    position: relative;
 }
 
 .fa-ticket {
@@ -159,6 +160,14 @@ nav ul a,
 }
 
 /* Search animation */
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    width: 30px;
+}
+
 .search-toggle {
     display: none;
 }
@@ -172,8 +181,6 @@ nav ul a,
     border: 2px solid var(--primary-color);
     border-radius: 30px;
     transition: width 0.4s ease, opacity 0.3s ease, padding 0.4s ease; /* adds smooth animation for width, opacity and padding changes */
-    position: absolute;
-    right: 285px; /* anchors the input to the right edge of the header container */
     height: 30px; /* sets a fixed height for the input field */
     transform-origin: right; /* makes the input's expansion originate from the right edge */
 }
@@ -265,8 +272,12 @@ footer input,
     margin-left: 10px;
 }
 
-#email:focus {
+#email {
     outline: 2px solid var(--primary-color);
+}
+
+#email:focus {
+    outline: 2px solid var(--accent-color);
 }
 
 footer input {
