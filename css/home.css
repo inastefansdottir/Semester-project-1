@@ -8,14 +8,8 @@ body {
 }
 
 nav ul a,
-.header-icons {
+.header-icons > * {
     color: var(--primary-light);
-}
-
-@media (hover: hover) {
-    nav ul a:hover {
-        color: var(--primary-color);
-    }
 }
 
 .search-input {

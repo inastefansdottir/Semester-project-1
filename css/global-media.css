@@ -163,6 +163,10 @@
         position: relative;
     }
 
+    .icon-mobile-section > * {
+        color: var(--primary-color);
+    }
+
     /* Footer */
     footer {
         padding: 0;
@@ -171,7 +175,7 @@
     .footer-wrapper {
         flex-direction: column;
         width: 100%;
-        padding: 100px 0 50px 0;
+        padding: 50px 0;
         align-items: center;
         gap: 50px;
         font-size: 20px;

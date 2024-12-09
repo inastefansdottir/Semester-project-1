@@ -5,7 +5,7 @@ body,
 
 /* Shared color */
 nav ul a,
-.header-icons,
+.header-icons > *,
 footer,
 .opening-times,
 .info-item,
@@ -15,16 +15,6 @@ footer,
 }
 
 /* Header */
-.current {
-    color: var(--primary-color);
-}
-
-@media (hover: hover) {
-    nav ul a:hover {
-        color: var(--primary-color);
-    }
-}
-
 .search-input {
     border: 2px solid var(--secondary-color);
 }
@@ -38,7 +28,7 @@ footer,
     max-width: 1600px;
     width: calc(100% - 400px); /* ensures 200px padding on both sides */
     margin: 0 auto; /* centers the container */
-    padding: 100px 0 150px 0;
+    padding: 100px 0;
 }
 
 .about-section img,

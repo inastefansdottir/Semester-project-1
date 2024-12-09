@@ -6,7 +6,7 @@ body,
 
 body,
 nav ul a,
-.header-icons {
+.header-icons > * {
     color: var(--primary-light);
 }
 
@@ -42,7 +42,7 @@ nav ul a,
     max-width: 1600px;
     width: calc(100% - 400px); /* ensures 200px padding on both sides */
     margin: 0 auto; /* centers the container */
-    padding: 200px 0;
+    padding: 100px 0;
     align-items: center;
     gap: 30px;
 }

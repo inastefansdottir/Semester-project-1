@@ -57,9 +57,29 @@
         max-width: 1000px;
         width: calc(100% - 100px);
     }
+
+    .about-section {
+        padding: 100px 0 50px 0;
+    }
+
+    .content-container,
+    .info-section {
+        padding: 50px 0;
+    }
+
+    .info-section {
+        height: 600px;
+    }
 }
 
 @media (max-width: 1000px) {
+    .about-section,
+    .content-container,
+    .get-involved-content,
+    .info-section {
+        padding: 50px 0;
+    }
+
     /* Hero section */
     .about-section img {
         width: 400px;
@@ -87,7 +107,7 @@
 
 @media (max-width: 830px) {
     /* Menu */
-    .icon-mobile-section {
+    .icon-mobile-section > * {
         color: var(--secondary-color);
     }
 
@@ -100,7 +120,6 @@
         width: calc(100% - 60px);
         gap: 30px;
         max-width: 500px;
-        padding: 50px 0;
     }
 
     .text-content,

@@ -133,30 +133,31 @@ nav ul {
 }
 
 nav ul a,
-.header-icons {
+.header-icons > * {
     color: var(--primary-color);
 }
 
 .current {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 @media (hover: hover) {
     nav ul a:hover {
-        color: var(--secondary-color);
+        color: var(--accent-color);
     }
 }
 
 .header-icons {
     display: flex;
-    gap: 15px;
-    align-items: center;
+    gap: 10px;
     font-size: 25px;
     position: relative;
 }
 
 .fa-ticket {
-    font-size: 30px;
+    font-size: 32px;
+    display: flex;
+    align-self: center;
 }
 
 /* Search animation */

@@ -4,6 +4,10 @@
         height: 300px;
     }
 
+    .hero-container {
+        padding: 100px 0 250px 0;
+    }
+
     .hero-content > * {
         margin-bottom: 15px;
     }
@@ -123,7 +127,9 @@
     /* Shared layout */
     .explore-container,
     .special-events-section {
-        max-width: 400px;
+        width: calc(100% - 60px);
+        max-width: 500px;
+        padding: 50px 0;
     }
 
     /* Hero section */      
@@ -132,7 +138,7 @@
     }
 
     .hero-container {
-        padding: 50px 0 250px 0;
+        padding: 50px 0 180px 0;
     }
     
     .hero-content h1 {
@@ -219,12 +225,8 @@
 }
 
 @media (max-width: 830px) {
-    /* Shared layout */
-    .hero-container,
-    .explore-container,
-    .special-events-section {
-        width: calc(100% - 60px);
-        max-width: 500px;
+    .hero-container {
+        padding: 50px 0 100px 0;
     }
 
     /* Menu */
@@ -234,7 +236,7 @@
 
     /* Hamburger menu */
     .hamburger-icon,
-    .icon-mobile-section {
+    .icon-mobile-section > * {
         color: var(--primary-light);
     }
 
@@ -270,7 +272,7 @@
 
     /* Exhibition section */
     .exhibition-section {
-        padding: 100px 30px;
+        padding: 50px 30px;
     }
 
     .exhibition-content {

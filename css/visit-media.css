@@ -24,13 +24,14 @@
 
 }
 
-@media (max-width: 760px) {
-    /* Shared layout */
-    .visit-section,
-    .contact-form-section {
+@media (max-width: 1000px) {
+    .visit-section {
         padding: 50px 0;
     }
+}
 
+@media (max-width: 760px) {
+    /* Shared layout */
     .visit-section,
     .contact-form-container {
         max-width: 500px;
@@ -58,6 +59,10 @@
     }
 
     /* Contact form section */
+    .contact-form-section {
+        padding: 0 0 50px 0;
+    }
+
     .contact-form-section h2 {
         font-size: 40px;
     }

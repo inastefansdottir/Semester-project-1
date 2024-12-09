@@ -4,6 +4,15 @@
     .explore-for-researchers img {
         width: 500px;
     }
+
+    .explore-for-kids {
+        padding: 100px 0 50px 0;
+    }
+
+    .explore-for-teachers,
+    .explore-for-researchers {
+        padding: 50px 0;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -28,6 +37,12 @@
 }
 
 @media (max-width: 1000px) {
+    .explore-for-kids,
+    .explore-for-teachers,
+    .explore-for-researchers {
+        padding: 50px 0;
+    }
+
     .explore-content h1 {
         font-size: 68px;
     }
@@ -96,5 +111,9 @@
 @media (max-width: 830px) {
     .menu {
         background-color: var(--primary-color);
+    }
+
+    .icon-mobile-section > * {
+        color: var(--primary-light);
     }
 }

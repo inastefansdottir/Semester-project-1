@@ -43,6 +43,7 @@
     .info-section {
         max-width: 1000px;
         width: calc(100% - 100px);
+        padding: 100px 0;
     }
 }
 
@@ -64,6 +65,10 @@
         background-color: var(--primary-color);
     }
 
+    .icon-mobile-section > * {
+        color: var(--primary-light);
+    }
+
     /* Hero section */
     .hero-text h1 {
         font-size: 40px;
@@ -74,7 +79,7 @@
         flex-direction: column;
         max-width: 500px;
         width: calc(100% - 60px);
-        padding: 100px 0;
+        padding: 50px 0;
         gap: 70px;
     }
 
