@@ -34,7 +34,7 @@
     }
 
     .hero-text h1{
-        margin: 0;
+        margin: 0 auto;
     }
 }
 
@@ -43,7 +43,6 @@
     .info-section {
         max-width: 1000px;
         width: calc(100% - 100px);
-        padding: 100px 0;
     }
 }
 
@@ -60,6 +59,13 @@
 }
 
 @media (max-width: 830px) {
+    /* Shared layouts */
+    .hero-text,
+    .info-section {
+        max-width: 500px;
+        width: calc(100% - 60px);
+    }
+
     /* Header */
     .menu {
         background-color: var(--primary-color);
@@ -72,13 +78,12 @@
     /* Hero section */
     .hero-text h1 {
         font-size: 40px;
+        width: 250px;
     }
 
     /* Info section */
     .info-section {
         flex-direction: column;
-        max-width: 500px;
-        width: calc(100% - 60px);
         padding: 50px 0;
         gap: 70px;
     }

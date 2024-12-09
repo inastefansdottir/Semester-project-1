@@ -29,19 +29,22 @@ nav ul a,
     align-content: center;
 }
 
+.hero-text,
+.info-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: calc(100% - 400px);
+}
+
 .hero-text h1 {
     font-size: 68px;
     width: 600px;
-    margin-left: 200px;
 }
 
 /* Info section */
 .info-section {
     display: flex;
     justify-content: space-between;
-    max-width: 1600px;
-    width: calc(100% - 400px); /* ensures 200px padding on both sides */
-    margin: 0 auto; /* centers the container */
     padding: 100px 0;
     align-items: center;
     gap: 30px;
