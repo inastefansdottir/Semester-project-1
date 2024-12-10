@@ -16,7 +16,7 @@ footer,
 
 /* Header */
 .search-input {
-    border: 2px solid var(--secondary-color);
+    outline: 2px solid var(--secondary-color);
 }
 
 /* About us */

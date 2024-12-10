@@ -7,7 +7,7 @@
     --secondary-color: #FF7C40;
 
     /* Accent palette */
-    --accent-color: #86DBDC;
+    --accent-color: #00D2D9;
     --accent-dark: #747474;
 }
 
@@ -179,7 +179,7 @@ nav ul a,
     border: none;
     background-color: var(--primary-light);
     color: var(--accent-dark);
-    border: 2px solid var(--primary-color);
+    outline: 2px solid var(--primary-color);
     border-radius: 30px;
     transition: width 0.4s ease, opacity 0.3s ease, padding 0.4s ease; /* adds smooth animation for width, opacity and padding changes */
     height: 30px; /* sets a fixed height for the input field */

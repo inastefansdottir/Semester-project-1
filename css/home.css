@@ -13,7 +13,7 @@ nav ul a,
 }
 
 .search-input {
-    border: none;
+    outline: none;
 }
 
 /* Shared layout */

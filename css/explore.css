@@ -24,7 +24,7 @@ nav ul a,
 }
 
 .search-input {
-    border: none;
+    outline: none;
 }
 
 /* Explore page, Shared layouts */
