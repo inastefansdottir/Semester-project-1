@@ -42,6 +42,7 @@ a {
     text-decoration: none;
     color: var(--primary-light);
 }
+
 /* Button styles */
 .button,
  footer input{
@@ -88,7 +89,7 @@ a {
     background-color: var(--secondary-color);
 }
 
-/* Header (navigation menu) */
+/* Shared layouts */
 .hamburger-icon,
 #menu-checkbox,
 .logo-mobile,
@@ -96,13 +97,6 @@ a {
     display: none;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* to avoid the hover state to go over the header */
-}
-
-/* Shared layouts */
 .navigation-wrapper,
 .footer-wrapper {
     display: flex;
@@ -110,6 +104,13 @@ header {
     max-width: 1600px;
     width: calc(100% - 400px); /* ensures 200px padding on both sides */
     margin: 0 auto;
+}
+
+/* Header (navigation menu) */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* to avoid the hover state to go over the header */
 }
 
 .navigation {

@@ -25,8 +25,14 @@
 }
 
 @media (max-width: 1000px) {
+    /* Visit section */
     .visit-section {
         padding: 50px 0;
+    }
+
+    /* Contact section */
+    .contact-form-section {
+        padding: 0 0 50px 0;
     }
 }
 
@@ -59,9 +65,6 @@
     }
 
     /* Contact form section */
-    .contact-form-section {
-        padding: 0 0 50px 0;
-    }
 
     .contact-form-section h2 {
         font-size: 40px;
@@ -75,7 +78,12 @@
         padding: 40px 40px 20px 40px;
     }
 
+    .contact-form-content input,
     .message textarea {
-        height: 180px;
+        font-size: 16px;
+    }
+
+    .message textarea {
+        height: 150px;
     }
 }

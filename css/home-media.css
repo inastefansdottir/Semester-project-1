@@ -225,10 +225,6 @@
 }
 
 @media (max-width: 830px) {
-    .hero-container {
-        padding: 50px 0 100px 0;
-    }
-
     /* Menu */
     .menu {
         background-color: var(--secondary-color);
@@ -250,6 +246,7 @@
     .hero-container {
         flex-direction: column;
         gap: 50px;
+        padding: 50px 0 100px 0;
     }
     
     .hero-content {

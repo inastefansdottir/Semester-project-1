@@ -138,10 +138,6 @@
         margin-bottom: 30px;
     }
 
-    .text-content {
-        text-align: center;
-    }
-
     .content-container {
         flex-direction: column-reverse;
         padding: 0 0 50px 0;

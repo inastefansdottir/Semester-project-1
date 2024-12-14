@@ -27,7 +27,7 @@ nav ul a,
     outline: none;
 }
 
-/* Explore page, Shared layouts */
+/* Shared layouts */
 .explore-for-kids,
 .explore-for-teachers,
 .explore-for-researchers {
@@ -38,23 +38,6 @@ nav ul a,
     width: calc(100% - 400px); /* ensures 200px padding on both sides */
     margin: 0 auto; /* centers the container */
     padding: 100px 0;
-}
-
-.explore-content {
-    width: 400px;
-}
-
-.explore-content h1 {
-    font-size: 100px;
-}
-
-.explore-content h2 {
-    font-size: 48px;
-    margin-bottom: 5px;
-}
-
-.explore-content p {
-    margin-bottom: 20px;
 }
 
 /* Explore for kids */
@@ -74,4 +57,22 @@ nav ul a,
 
 .explore-for-teachers div {
     text-align: right;
+}
+
+/* Explore text */
+.explore-content {
+    width: 400px;
+}
+
+.explore-content h1 {
+    font-size: 100px;
+}
+
+.explore-content h2 {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.explore-content p {
+    margin-bottom: 20px;
 }

@@ -5,10 +5,12 @@
         width: 500px;
     }
 
+    /* Explore for kids */
     .explore-for-kids {
         padding: 100px 0 50px 0;
     }
 
+    /* Explore for teachers, Explore for Researchers */
     .explore-for-teachers,
     .explore-for-researchers {
         padding: 50px 0;
@@ -16,11 +18,13 @@
 }
 
 @media (max-width: 1400px) {
+    /* Hero section */
     .explore-image-container img {
         height: 650px;
         width: 450px;
     }
 
+    /* Explore text */
     .explore-content {
         width: 350px;
     }
@@ -37,20 +41,13 @@
 }
 
 @media (max-width: 1000px) {
+    /* Shared layouts */
     .explore-for-kids,
     .explore-for-teachers,
     .explore-for-researchers {
         padding: 50px 0;
     }
 
-    .explore-content h1 {
-        font-size: 68px;
-    }
-    
-    .explore-content h2 {
-        font-size: 30px;
-    }
-    
     /* Explore for kids */
     .explore-image-container img {
         height: 500px;
@@ -62,6 +59,15 @@
     .explore-for-researchers img {
         width: 350px;
         border-radius: 30px;
+    }
+
+    /* Explore text */
+    .explore-content h1 {
+        font-size: 68px;
+    }
+    
+    .explore-content h2 {
+        font-size: 30px;
     }
 }
 
@@ -78,16 +84,6 @@
     }
 
     /* Explore for kids section */
-    .explore-content h1 {
-        font-size: 48px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .explore-content h2 {
-        font-size: 24px;
-    }
-
     .explore-image-container img {
         height: auto;
         width: 100%;
@@ -98,17 +94,29 @@
         flex-direction: column-reverse;
     }
 
-    .explore-content {
+    .explore-for-teachers img,
+    .explore-for-researchers img {
         width: 100%;
     }
 
-    .explore-for-teachers img,
-    .explore-for-researchers img {
+    /* Explore text */
+    .explore-content h1 {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .explore-content h2 {
+        font-size: 24px;
+    }
+    
+    .explore-content {
         width: 100%;
     }
 }
 
 @media (max-width: 830px) {
+    /* Header */
     .menu {
         background-color: var(--primary-color);
     }
