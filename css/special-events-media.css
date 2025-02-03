@@ -1,96 +1,96 @@
 @media (max-width: 1700px) {
-    /* 1st section */
-    .special-events-section {
-        padding: 100px 0 50px 0;
-    }
+  /* 1st section */
+  .special-events-section {
+    padding: 100px 0 50px 0;
+  }
 
-    .visiting-professor img {
-        width: 100%;
-        height: 600px;
-    }
+  .visiting-professor img {
+    width: 100%;
+    height: 600px;
+  }
 
-    /* 2nd and 3rd section */
-    .event-article {
-        padding: 50px 0;
-    }
+  /* 2nd and 3rd section */
+  .event-article {
+    padding: 50px 0;
+  }
 
-    .event-article img {
-        width: 500px;
-    }
+  .event-article img {
+    width: 500px;
+  }
 
-    .article-content {
-        width: 450px;
-        margin-left: 50px;
-        font-size: 16px;
-    }
+  .article-content {
+    width: 450px;
+    margin-left: 50px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1300px) {
-    /* Shared layout */
-    .special-events-section,
-    .event-article {
-        max-width: 1000px;
-        width: calc(100% - 100px);
-        padding: 50px 0;
-    }
+  /* Shared layout */
+  .special-events-section,
+  .event-article {
+    max-width: 1000px;
+    width: calc(100% - 100px);
+    padding: 50px 0;
+  }
 
-    .visiting-professor h3,
-    .article-content h3 {
-        font-size: 24px;
-    }
+  .visiting-professor h3,
+  .article-content h3 {
+    font-size: 24px;
+  }
 
-    /* 1st section */
-    .special-events-section h1 {
-        font-size: 48px;
-    }
-    
-    .special-events-section h2 {
-        font-size: 20px;
-    }
+  /* 1st section */
+  .special-events-section h1 {
+    font-size: 48px;
+  }
 
-    /* 2nd and 3rd section */
-    .event-article img {
-        width: 400px;
-    }
+  .special-events-section h2 {
+    font-size: 20px;
+  }
+
+  /* 2nd and 3rd section */
+  .event-article img {
+    width: 400px;
+  }
 }
 
 @media (max-width: 870px) {
-    /* Shared layout */
-    .special-events-section,
-    .event-article {
-        flex-direction: column;
-        max-width: 500px;
-        width: calc(100% - 60px); 
-    }
+  /* Shared layout */
+  .special-events-section,
+  .event-article {
+    flex-direction: column;
+    max-width: 500px;
+    width: calc(100% - 60px);
+  }
 
-    /* 1st section */
-    .special-events-section h1 {
-        font-size: 40px;
-    }
+  /* 1st section */
+  .special-events-section h1 {
+    font-size: 40px;
+  }
 
-    .visiting-professor h3 {
-        margin: 50px 0 10px 0;
-    }
+  .visiting-professor h3 {
+    margin: 50px 0 10px 0;
+  }
 
-    .visiting-professor p {
-        font-size: 16px;
-    }
+  .visiting-professor p {
+    font-size: 16px;
+  }
 
-    .visiting-professor img,
-    .event-article img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
+  .visiting-professor img,
+  .event-article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
 
-    /* 2nd and 3rd section */
-    .event-article {
-        padding: 0 0 50px 0;
-    }
+  /* 2nd and 3rd section */
+  .event-article {
+    padding: 0 0 50px 0;
+  }
 
-    .article-content {
-        width: 100%;
-        margin: 50px 0 0 0;
-        text-align: left;
-    }
+  .article-content {
+    width: 100%;
+    margin: 50px 0 0 0;
+    text-align: left;
+  }
 }

@@ -1,64 +1,64 @@
 /* header */
 body,
 .navigation {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 body,
 nav ul a,
 .header-icons > * {
-    color: var(--primary-light);
+  color: var(--primary-light);
 }
 
 @media (hover: hover) {
-    nav ul a:hover {
-        color: var(--accent-color);
-    }
+  nav ul a:hover {
+    color: var(--accent-color);
+  }
 }
 
 .search-input {
-    border: none;
+  border: none;
 }
 
 /* Hero section */
 .hero-section {
-    background-image: url(../images/exhibition/liquid-dropper.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 1000px;
-    align-content: center;
+  background-image: url(../images/exhibition/liquid-dropper.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+  align-content: center;
 }
 
 .hero-text,
 .info-section {
-    max-width: 1600px;
-    margin: 0 auto;
-    width: calc(100% - 400px);
+  max-width: 1600px;
+  margin: 0 auto;
+  width: calc(100% - 400px);
 }
 
 .hero-text h1 {
-    font-size: 68px;
-    width: 600px;
+  font-size: 68px;
+  width: 600px;
 }
 
 /* Info section */
 .info-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 0;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  align-items: center;
+  gap: 30px;
 }
 
 .info-text {
-    font-size: 20px;
-    width: 400px;
+  font-size: 20px;
+  width: 400px;
 }
 
 .margin {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .align-right {
-    text-align: right;
+  text-align: right;
 }

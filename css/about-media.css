@@ -1,165 +1,165 @@
 @media (max-width: 1680px) {
-    /* Shared layouts */
-    .about-section img,
-    .content-container img {
-        width: 500px;
-    }
+  /* Shared layouts */
+  .about-section img,
+  .content-container img {
+    width: 500px;
+  }
 
-    .text-content p,
-    .text-container,
-    .get-involved-content p,
-    .info-item p {
-        font-size: 16px
-    }
+  .text-content p,
+  .text-container,
+  .get-involved-content p,
+  .info-item p {
+    font-size: 16px;
+  }
 
-    /* Hero section */
-    .text-content h1 {
-        font-size: 68px;
-    }
+  /* Hero section */
+  .text-content h1 {
+    font-size: 68px;
+  }
 
-    .text-content {
-        width: 300px;
-    }
+  .text-content {
+    width: 300px;
+  }
 
-    .text-container {
-        width: 350px;
-    }
+  .text-container {
+    width: 350px;
+  }
 
-    /* Get involved section */
-    .get-involved-content h2 {
-        font-size: 68px;
-    }
+  /* Get involved section */
+  .get-involved-content h2 {
+    font-size: 68px;
+  }
 
-    .get-involved-content h3 {
-        font-size: 24px;
-    }
+  .get-involved-content h3 {
+    font-size: 24px;
+  }
 
-    .get-involved-content img {
-        height: 600px;
-    }
+  .get-involved-content img {
+    height: 600px;
+  }
 
-    /* Info section */
-    .info-item {
-        width: 500px;
-    }
+  /* Info section */
+  .info-item {
+    width: 500px;
+  }
 
-    .info-item h3 {
-        font-size: 36px;
-    }
+  .info-item h3 {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 1300px) {
-    /* Shared layouts */
-    .about-section,
-    .content-container,
-    .get-involved-content,
-    .info-section {
-        max-width: 1000px;
-        width: calc(100% - 100px);
-    }
+  /* Shared layouts */
+  .about-section,
+  .content-container,
+  .get-involved-content,
+  .info-section {
+    max-width: 1000px;
+    width: calc(100% - 100px);
+  }
 
-    .about-section {
-        padding: 100px 0 50px 0;
-    }
+  .about-section {
+    padding: 100px 0 50px 0;
+  }
 
-    .content-container,
-    .info-section {
-        padding: 50px 0;
-    }
+  .content-container,
+  .info-section {
+    padding: 50px 0;
+  }
 
-    .info-section {
-        height: 600px;
-    }
+  .info-section {
+    height: 600px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .about-section,
-    .content-container,
-    .get-involved-content,
-    .info-section {
-        padding: 50px 0;
-    }
+  .about-section,
+  .content-container,
+  .get-involved-content,
+  .info-section {
+    padding: 50px 0;
+  }
 
-    /* Hero section */
-    .about-section img {
-        width: 400px;
-    }
+  /* Hero section */
+  .about-section img {
+    width: 400px;
+  }
 
-    .text-content h1 {
-        font-size: 48px;
-    }
+  .text-content h1 {
+    font-size: 48px;
+  }
 
-    .content-container img {
-        height: 300px;
-        width: 350px;
-        object-fit: cover;
-    }
+  .content-container img {
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+  }
 
-    .text-container {
-        margin-left: 50px;
-    }
+  .text-container {
+    margin-left: 50px;
+  }
 
-    /* Get involved section */
-    .get-involved-content img {
-        height: 500px;
-    }
+  /* Get involved section */
+  .get-involved-content img {
+    height: 500px;
+  }
 }
 
 @media (max-width: 830px) {
-    /* Menu */
-    .icon-mobile-section > * {
-        color: var(--secondary-color);
-    }
+  /* Menu */
+  .icon-mobile-section > * {
+    color: var(--secondary-color);
+  }
 
-    /* Shared layouts */
-    .about-section,
-    .content-container,
-    .get-involved-content,
-    .info-section {
-        flex-direction: column;
-        width: calc(100% - 60px);
-        gap: 30px;
-        max-width: 500px;
-    }
+  /* Shared layouts */
+  .about-section,
+  .content-container,
+  .get-involved-content,
+  .info-section {
+    flex-direction: column;
+    width: calc(100% - 60px);
+    gap: 30px;
+    max-width: 500px;
+  }
 
-    .text-content,
-    .about-section img,
-    .content-container img,
-    .text-container,
-    .info-item {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
+  .text-content,
+  .about-section img,
+  .content-container img,
+  .text-container,
+  .info-item {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 
-    /* Hero section */
-    .about-section h1 {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+  /* Hero section */
+  .about-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    .content-container {
-        flex-direction: column-reverse;
-        padding: 0 0 50px 0;
-    }
+  .content-container {
+    flex-direction: column-reverse;
+    padding: 0 0 50px 0;
+  }
 
-    .text-container {
-        text-align: left;
-    }
+  .text-container {
+    text-align: left;
+  }
 
-    /* Get involved section */
-    .get-involved-content h2 {
-        font-size: 48px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+  /* Get involved section */
+  .get-involved-content h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    .get-involved-content img {
-        height: 250px;
-    }
+  .get-involved-content img {
+    height: 250px;
+  }
 
-    /* Info section */
-    .info-section {
-        height: 700px;
-    }
+  /* Info section */
+  .info-section {
+    height: 700px;
+  }
 }

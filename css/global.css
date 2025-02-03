@@ -1,32 +1,32 @@
 :root {
-    /* Primary palette */
-    --primary-color: #E54352;
-    --primary-light: #F4EFE8;
+  /* Primary palette */
+  --primary-color: #e54352;
+  --primary-light: #f4efe8;
 
-    /* Secondary palette */
-    --secondary-color: #FF7C40;
+  /* Secondary palette */
+  --secondary-color: #ff7c40;
 
-    /* Accent palette */
-    --accent-color: #00D2D9;
-    --accent-dark: #747474;
+  /* Accent palette */
+  --accent-color: #00d2d9;
+  --accent-dark: #747474;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: var(--primary-color);
-    background-color: var(--primary-light);
+  color: var(--primary-color);
+  background-color: var(--primary-light);
 }
 
 body,
 input,
 .button {
-    font-family: "REM", Helvetica, sans-serif;
-    font-weight: 400;
+  font-family: "REM", Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 h1,
@@ -34,59 +34,59 @@ h2,
 h3,
 h4,
 .menu {
-    font-family: "Gabarito", Helvetica, sans-serif;
-    font-weight: 800;
+  font-family: "Gabarito", Helvetica, sans-serif;
+  font-weight: 800;
 }
 
 a {
-    text-decoration: none;
-    color: var(--primary-light);
+  text-decoration: none;
+  color: var(--primary-light);
 }
 
 /* Button styles */
 .button,
- footer input{
-    border-style: none;
-    border-radius: 60px;
-    font-size: 16px;
-    padding: 10px 30px;
+footer input {
+  border-style: none;
+  border-radius: 60px;
+  font-size: 16px;
+  padding: 10px 30px;
 }
 
 .button {
-    background-color: var(--primary-color);
-    color: var(--primary-light);
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.4s ease, transform 0.4s ease;
+  background-color: var(--primary-color);
+  color: var(--primary-light);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s ease;
 }
 
 @media (hover: hover) {
-    .button:hover {
-        background-color: var(--primary-light);
-        color: var(--primary-color);
-        outline: 2px solid var(--primary-color);
-    }
+  .button:hover {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    outline: 2px solid var(--primary-color);
+  }
 
-    .cream-orange-button:hover {
-        background-color: var(--secondary-color);
-        color: var(--primary-light);
-        outline: 2px solid var(--primary-light);
-    }
+  .cream-orange-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-light);
+    outline: 2px solid var(--primary-light);
+  }
 
-    .orange-button:hover {
-        background-color: var(--primary-light);
-        color: var(--secondary-color);
-        outline: 2px solid var(--secondary-color);
-    }
+  .orange-button:hover {
+    background-color: var(--primary-light);
+    color: var(--secondary-color);
+    outline: 2px solid var(--secondary-color);
+  }
 }
 
 .cream-orange-button {
-    background-color: var(--primary-light);
-    color: var(--secondary-color);
+  background-color: var(--primary-light);
+  color: var(--secondary-color);
 }
 
 .orange-button {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 /* Shared layouts */
@@ -94,209 +94,207 @@ a {
 #menu-checkbox,
 .logo-mobile,
 .icon-mobile-section {
-    display: none;
+  display: none;
 }
 
 .navigation-wrapper,
 .footer-wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1600px;
-    width: calc(100% - 400px); /* ensures 200px padding on both sides */
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  width: calc(100% - 400px); /* ensures 200px padding on both sides */
+  margin: 0 auto;
 }
 
 /* Header (navigation menu) */
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* to avoid the hover state to go over the header */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* to avoid the hover state to go over the header */
 }
 
 .navigation {
-    background-color: var(--primary-light);
-    padding: 5px 0;
-    box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-light);
+  padding: 5px 0;
+  box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navigation-wrapper {
-    align-items: center;
+  align-items: center;
 }
 
 .logo {
-    width: 100px;
+  width: 100px;
 }
 
 nav ul {
-    list-style: none; 
-    display: flex;
-    gap: 50px;
+  list-style: none;
+  display: flex;
+  gap: 50px;
 }
 
 nav ul a,
 .header-icons > * {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 @media (hover: hover) {
-    nav ul a:hover {
-        color: var(--accent-color);
-    }
+  nav ul a:hover {
+    color: var(--accent-color);
+  }
 }
 
 .header-icons {
-    display: flex;
-    gap: 10px;
-    font-size: 25px;
-    position: relative;
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+  position: relative;
 }
 
 .fa-ticket {
-    font-size: 32px;
-    display: flex;
-    align-self: center;
+  font-size: 32px;
+  display: flex;
+  align-self: center;
 }
 
 /* Search animation */
 .search-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 10px;
-    width: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+  width: 30px;
 }
 
 .search-toggle {
-    display: none;
+  display: none;
 }
 
 .search-input {
-    width: 0; /* initial state: 0 width */
-    opacity: 0; /* makes it invisible by default */
-    border: none;
-    background-color: var(--primary-light);
-    color: var(--accent-dark);
-    outline: 2px solid var(--primary-color);
-    border-radius: 30px;
-    transition: width 0.4s ease, opacity 0.3s ease, padding 0.4s ease; /* adds smooth animation for width, opacity and padding changes */
-    height: 30px; /* sets a fixed height for the input field */
-    transform-origin: right; /* makes the input's expansion originate from the right edge */
+  width: 0; /* initial state: 0 width */
+  opacity: 0; /* makes it invisible by default */
+  border: none;
+  background-color: var(--primary-light);
+  color: var(--accent-dark);
+  outline: 2px solid var(--primary-color);
+  border-radius: 30px;
+  transition: width 0.4s ease, opacity 0.3s ease, padding 0.4s ease; /* adds smooth animation for width, opacity and padding changes */
+  height: 30px; /* sets a fixed height for the input field */
+  transform-origin: right; /* makes the input's expansion originate from the right edge */
 }
 
 .search-input:focus {
-    outline: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .fa-magnifying-glass {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .search-toggle:checked ~ .search-input {
-    width: 200px;
-    opacity: 1;
-    padding: 0 10px;
+  width: 200px;
+  opacity: 1;
+  padding: 0 10px;
 }
-
 
 /* Footer */
 footer {
-    background-color: var(--primary-light);
-    padding: 100px 0;
-    margin: 0 auto;
+  background-color: var(--primary-light);
+  padding: 100px 0;
+  margin: 0 auto;
 }
 
 .footer-wrapper {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 footer,
 footer input,
 .opening-times,
 .social-media-icons > * {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
-
 
 /* Left side of footer */
 .museum-info {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .museum-text {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .opening-times {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 @media (hover: hover) {
-    .opening-times:hover {
-        text-decoration: 2px solid underline;
-    }
+  .opening-times:hover {
+    text-decoration: 2px solid underline;
+  }
 }
 
 .museum-info address {
-    font-style: normal;
-    width: 350px;
+  font-style: normal;
+  width: 350px;
 }
 
 .bold-text {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 /* Right side of footer */
 .newsletter-section {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #newsletter-heading {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .newsletter-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .newsletter-form > * {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #email {
-    outline: 2px solid var(--primary-color);
+  outline: 2px solid var(--primary-color);
 }
 
 #email:focus {
-    outline: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 footer input {
-    padding: 10px 20px;
-    width: 300px;
+  padding: 10px 20px;
+  width: 300px;
 }
 
 .social-media-icons {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .social-media-icons > * {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 @media (hover: hover) {
-    .social-media-icons > *:hover {
-        color: var(--secondary-color);
-    }
+  .social-media-icons > *:hover {
+    color: var(--secondary-color);
+  }
 }
