@@ -51,6 +51,10 @@
 }
 
 @media (max-width: 1000px) {
+  .hero-section {
+    height: 400px;
+  }
+
   /* Info section */
   .info-section img {
     width: 200px;

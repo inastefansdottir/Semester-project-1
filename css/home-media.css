@@ -30,6 +30,7 @@
   .exhibition-section h2 {
     font-size: 48px;
     text-align: center;
+    margin: 0 20px;
   }
 
   .exhibition-content {
@@ -84,6 +85,7 @@
   /* Special events section */
   .special-events-content h2 {
     font-size: 36px;
+    margin: 0 20px;
   }
 
   .professor-image {
@@ -124,12 +126,69 @@
 }
 
 @media (max-width: 1020px) {
+  /* Shared slider styling*/
+  .exhibition-slider-wrapper,
+  .special-events-slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+  .slider-button,
+  .special-events-slider-wrapper .slider-button {
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 2;
+    padding: 0 10px;
+    transition: color 0.2s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .slider-button:hover,
+  .special-events-slider-wrapper .slider-button:hover {
+    color: var(--accent-color);
+    outline: none;
+  }
+  .slider-prev,
+  .special-events-slider-wrapper .slider-prev {
+    order: 0;
+  }
+  .exhibition-content,
+  .special-events-cards {
+    order: 1;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-next,
+  .special-events-slider-wrapper .slider-next {
+    order: 2;
+  }
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 50px;
+  }
+
+  .news-card,
+  .professor-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   /* Shared layout */
   .explore-container,
   .special-events-section {
     width: calc(100% - 60px);
-    max-width: 500px;
-    padding: 50px 0;
+    max-width: 530px;
+    padding: 100px 0;
   }
 
   /* Hero section */
@@ -166,7 +225,7 @@
 
   .card-image {
     height: 250px;
-    width: 100%;
+    width: 350px;
   }
 
   /* Explore section */
@@ -208,6 +267,10 @@
     margin-bottom: 20px;
   }
 
+  .special-events-content h3 {
+    margin: 0;
+  }
+
   .professor-image {
     width: 100%;
     height: 250px;
@@ -221,6 +284,11 @@
   .news-card img {
     width: 100%;
     height: 250px;
+  }
+
+  .news-card,
+  .professor-card {
+    padding: 30px;
   }
 }
 
@@ -247,6 +315,7 @@
     flex-direction: column;
     gap: 50px;
     padding: 50px 0 100px 0;
+    width: calc(100% - 60px);
   }
 
   .hero-content {
@@ -274,5 +343,42 @@
 
   .exhibition-content {
     max-width: 400px;
+  }
+
+  .special-events-section {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .explore-container,
+  .special-events-section {
+    padding: 50px 0;
+  }
+
+  .exhibition-section {
+    padding: 50px 10px;
+  }
+
+  .special-events-section {
+    gap: 0;
+  }
+
+  .exhibition-card,
+  .news-card,
+  .professor-card {
+    padding: 20px;
+  }
+
+  .card-image,
+  .news-card img,
+  .professor-image {
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .special-events-cards {
+    max-width: 280px;
   }
 }
