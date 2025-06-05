@@ -132,13 +132,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 10px;
   }
   .slider-button,
   .special-events-slider-wrapper .slider-button {
     background: none;
     border: none;
-    font-size: 2.2rem;
     color: var(--primary-color);
     cursor: pointer;
     z-index: 2;
@@ -350,7 +349,12 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
+  .exhibition-slider-wrapper,
+  .special-events-slider-wrapper {
+    gap: 0;
+  }
+
   .explore-container,
   .special-events-section {
     padding: 50px 0;
@@ -378,7 +382,8 @@
     border-radius: 20px;
   }
 
-  .special-events-cards {
-    max-width: 280px;
+  .special-events-cards,
+  .exhibition-card {
+    max-width: 260px;
   }
 }

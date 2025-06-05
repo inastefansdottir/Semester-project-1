@@ -169,7 +169,9 @@
   .icon-mobile-section > * {
     color: var(--primary-color);
   }
+}
 
+@media (max-width: 670px) {
   /* Footer */
   footer {
     padding: 0;
