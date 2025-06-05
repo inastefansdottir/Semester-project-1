@@ -201,6 +201,15 @@ nav ul a,
   padding: 0 10px;
 }
 
+/* When menu is open, make hamburger icon --primary-light */
+#menu-checkbox:checked + .hamburger-icon {
+  color: var(--primary-light);
+}
+
+#menu-checkbox:checked + .hamburger-icon i {
+  color: var(--primary-light);
+}
+
 /* Footer */
 footer {
   background-color: var(--primary-light);

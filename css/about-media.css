@@ -107,6 +107,7 @@
 
 @media (max-width: 830px) {
   /* Menu */
+  .fa-bars,
   .icon-mobile-section > * {
     color: var(--secondary-color);
   }
