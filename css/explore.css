@@ -35,8 +35,8 @@ nav ul a,
   justify-content: space-between;
   align-items: center;
   max-width: 1600px;
-  width: calc(100% - 400px); /* ensures 200px padding on both sides */
-  margin: 0 auto; /* centers the container */
+  width: var(--large-screen-width); /* ensures 200px padding on both sides */
+  margin: var(--centering); /* centers the container */
   padding: 100px 0;
 }
 
@@ -45,14 +45,14 @@ nav ul a,
   height: 650px;
   width: 550px;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: var(--border-radius-medium);
 }
 
 /* Explore for teachers, Explore for researchers */
 .explore-for-teachers img,
 .explore-for-researchers img {
   width: 800px;
-  border-radius: 30px;
+  border-radius: var(--border-radius-medium);
 }
 
 .explore-for-teachers div {
@@ -65,11 +65,11 @@ nav ul a,
 }
 
 .explore-content h1 {
-  font-size: 100px;
+  font-size: var(--font-size-xxl);
 }
 
 .explore-content h2 {
-  font-size: 48px;
+  font-size: var(--font-size-lg);
   margin-bottom: 5px;
 }
 

@@ -32,12 +32,12 @@ nav ul a,
 .hero-text,
 .info-section {
   max-width: 1600px;
-  margin: 0 auto;
-  width: calc(100% - 400px);
+  margin: var(--centering);
+  width: var(--large-screen-width);
 }
 
 .hero-text h1 {
-  font-size: 68px;
+  font-size: var(font-size-xl);
   width: 600px;
 }
 
@@ -51,7 +51,7 @@ nav ul a,
 }
 
 .info-text {
-  font-size: 20px;
+  font-size: var(--font-size-xxs);
   width: 400px;
 }
 

@@ -23,8 +23,8 @@
 
   /* Dark overlay */
   .hero-overlay {
-    width: 100%;
-    height: 100%;
+    width: var(--scalable-width);
+    height: var(--scalable-height);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@
   }
 
   .hero-text h1 {
-    margin: 0 auto;
+    margin: var(--centering);
   }
 }
 
@@ -41,11 +41,11 @@
   /* Info section */
   .info-section {
     max-width: 1000px;
-    width: calc(100% - 100px);
+    width: var(--smaller-screen-width);
   }
 
   .info-text {
-    font-size: 16px;
+    font-size: var(--font-size-xxxs);
     width: 250px;
   }
 }
@@ -66,7 +66,7 @@
   .hero-text,
   .info-section {
     max-width: 500px;
-    width: calc(100% - 60px);
+    width: var(--mobile-screen-width);
   }
 
   /* Header */
@@ -80,7 +80,7 @@
 
   /* Hero section */
   .hero-text h1 {
-    font-size: 40px;
+    font-size: var(--font-size-md);
     width: 250px;
   }
 
@@ -92,7 +92,7 @@
   }
 
   .info-text {
-    width: 100%;
+    width: var(--scalable-width);
   }
 
   .align-right {

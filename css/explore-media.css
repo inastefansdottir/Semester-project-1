@@ -36,7 +36,7 @@
   .explore-for-teachers,
   .explore-for-researchers {
     max-width: 1000px;
-    width: calc(100% - 100px);
+    width: var(--smaller-screen-width);
   }
 }
 
@@ -58,16 +58,16 @@
   .explore-for-teachers img,
   .explore-for-researchers img {
     width: 350px;
-    border-radius: 30px;
+    border-radius: var(--border-radius-medium);
   }
 
   /* Explore text */
   .explore-content h1 {
-    font-size: 68px;
+    font-size: var(font-size-xl);
   }
 
   .explore-content h2 {
-    font-size: 30px;
+    font-size: var(--font-size-ms);
   }
 }
 
@@ -79,14 +79,14 @@
     flex-direction: column;
     gap: 50px;
     padding: 50px 0;
-    width: calc(100% - 60px);
+    width: var(--mobile-screen-width);
     max-width: 500px;
   }
 
   /* Explore for kids section */
   .explore-image-container img {
     height: auto;
-    width: 100%;
+    width: var(--scalable-width);
   }
 
   /* Explore for teachers, Explore for Researchers */
@@ -96,22 +96,22 @@
 
   .explore-for-teachers img,
   .explore-for-researchers img {
-    width: 100%;
+    width: var(--scalable-width);
   }
 
   /* Explore text */
   .explore-content h1 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
     text-align: center;
     margin-bottom: 30px;
   }
 
   .explore-content h2 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   .explore-content {
-    width: 100%;
+    width: var(--scalable-width);
   }
 }
 

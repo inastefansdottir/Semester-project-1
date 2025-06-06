@@ -9,12 +9,12 @@
   .text-container,
   .get-involved-content p,
   .info-item p {
-    font-size: 16px;
+    font-size: var(--font-size-xxxs);
   }
 
   /* Hero section */
   .text-content h1 {
-    font-size: 68px;
+    font-size: var(--font-size-xl);
   }
 
   .text-content {
@@ -27,11 +27,11 @@
 
   /* Get involved section */
   .get-involved-content h2 {
-    font-size: 68px;
+    font-size: var(--font-size-xl);
   }
 
   .get-involved-content h3 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   .get-involved-content img {
@@ -44,7 +44,7 @@
   }
 
   .info-item h3 {
-    font-size: 36px;
+    font-size: var(--font-size-base);
   }
 }
 
@@ -55,7 +55,7 @@
   .get-involved-content,
   .info-section {
     max-width: 1000px;
-    width: calc(100% - 100px);
+    width: var(--smaller-screen-width);
   }
 
   .about-section {
@@ -86,7 +86,7 @@
   }
 
   .text-content h1 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
   }
 
   .content-container img {
@@ -118,9 +118,8 @@
   .get-involved-content,
   .info-section {
     flex-direction: column;
-    width: calc(100% - 60px);
+    width: var(--mobile-screen-width);
     gap: 30px;
-    max-width: 500px;
   }
 
   .text-content,
@@ -128,7 +127,7 @@
   .content-container img,
   .text-container,
   .info-item {
-    width: 100%;
+    width: var(--scalable-width);
     height: auto;
     margin: 0;
   }
@@ -150,17 +149,17 @@
 
   /* Get involved section */
   .get-involved-content h2 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
     text-align: center;
     margin-bottom: 30px;
   }
 
   .get-involved-content img {
-    height: 250px;
+    height: auto;
   }
 
   /* Info section */
   .info-section {
-    height: 700px;
+    height: var(--scalable-height);
   }
 }

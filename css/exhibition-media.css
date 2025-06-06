@@ -1,7 +1,7 @@
 @media (max-width: 1750px) {
   /* Hero section */
   .hero-section h1 {
-    font-size: 68px;
+    font-size: var(font-size-xl);
     max-width: 400px;
   }
 
@@ -31,7 +31,7 @@
   }
 
   .exhibition-card h2 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   .exhibition-card img {
@@ -52,7 +52,7 @@
   /* Hero section */
   .hero-section {
     max-width: 1000px;
-    width: calc(100% - 100px);
+    width: var(--smaller-screen-width);
   }
 }
 
@@ -75,14 +75,14 @@
 @media (max-width: 870px) {
   /* Hero section */
   .hero-section h1 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
   }
 
   /* Exhibition cards section */
   .exhibition-content {
     max-width: 500px;
-    width: calc(100% - 60px);
-    margin: 0 auto;
+    width: var(--mobile-screen-width);
+    margin: var(--centering);
     padding: 0 0 50px 0;
   }
 
@@ -95,11 +95,11 @@
   }
 
   .exhibition-card h2 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   .exhibition-card img {
     height: 250px;
-    width: 100%;
+    width: var(--scalable-width);
   }
 }

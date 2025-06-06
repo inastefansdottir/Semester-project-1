@@ -9,6 +9,44 @@
   /* Accent palette */
   --accent-color: #00d2d9;
   --accent-dark: #747474;
+
+  /* Shadow */
+  --shadow-color: rgba(0, 0, 0, 0.2);
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-extra-bold: 800;
+
+  /* Font sizes */
+  --font-size-xxl: 100px;
+  --font-size-xl: 68px;
+  --font-size-lg: 48px;
+  --font-size-md: 40px;
+  --font-size-base: 36px;
+  --font-size-ml: 32px;
+  --font-size-ms: 30px;
+  --font-size-sm: 25px;
+  --font-size-xs: 24px;
+  --font-size-xxs: 20px;
+  --font-size-xxxs: 16px;
+  --font-size-xxxxs: 14px;
+
+  /* Border radius */
+  --border-radius-small: 20px;
+  --border-radius-medium: 30px;
+  --border-radius-big: 60px;
+
+  /* Margin */
+  --centering: 0 auto;
+
+  /* Width / Height - margin on the sides */
+  --large-screen-width: calc(100% - 400px);
+  --smaller-screen-width: calc(100% - 100px);
+  --mobile-screen-width: calc(100% - 60px);
+  --scalable-width: 100%;
+  --scalable-height: 100%;
 }
 
 * {
@@ -26,7 +64,7 @@ body,
 input,
 .button {
   font-family: "REM", Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
 
 h1,
@@ -35,7 +73,7 @@ h3,
 h4,
 .menu {
   font-family: "Gabarito", Helvetica, sans-serif;
-  font-weight: 800;
+  font-weight: var(--font-weight-extra-bold);
 }
 
 a {
@@ -47,15 +85,15 @@ a {
 .button,
 footer input {
   border-style: none;
-  border-radius: 60px;
-  font-size: 16px;
+  border-radius: var(--border-radius-big);
+  font-size: var(--font-size-xxxs);
   padding: 10px 30px;
 }
 
 .button {
   background-color: var(--primary-color);
   color: var(--primary-light);
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
   cursor: pointer;
   transition: background-color 0.4s ease, transform 0.4s ease;
 }
@@ -102,8 +140,8 @@ footer input {
   display: flex;
   justify-content: space-between;
   max-width: 1600px;
-  width: calc(100% - 400px); /* ensures 200px padding on both sides */
-  margin: 0 auto;
+  width: var(--large-screen-width); /* ensures 200px padding on both sides */
+  margin: var(--centering);
 }
 
 /* Header (navigation menu) */
@@ -116,7 +154,7 @@ header {
 .navigation {
   background-color: var(--primary-light);
   padding: 5px 0;
-  box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 23px 0 var(--shadow-color);
 }
 
 .navigation-wrapper {
@@ -151,12 +189,12 @@ nav ul a,
 .header-icons {
   display: flex;
   gap: 10px;
-  font-size: 25px;
+  font-size: var(--font-size-sm);
   position: relative;
 }
 
 .fa-ticket {
-  font-size: 32px;
+  font-size: var(--font-size-ml);
   display: flex;
   align-self: center;
 }
@@ -181,7 +219,7 @@ nav ul a,
   background-color: var(--primary-light);
   color: var(--accent-dark);
   outline: 2px solid var(--primary-color);
-  border-radius: 30px;
+  border-radius: var(--border-radius-medium);
   transition: width 0.4s ease, opacity 0.3s ease, padding 0.4s ease; /* adds smooth animation for width, opacity and padding changes */
   height: 30px; /* sets a fixed height for the input field */
   transform-origin: right; /* makes the input's expansion originate from the right edge */
@@ -214,11 +252,7 @@ nav ul a,
 footer {
   background-color: var(--primary-light);
   padding: 100px 0;
-  margin: 0 auto;
-}
-
-.footer-wrapper {
-  font-size: 20px;
+  margin: var(--centering);
 }
 
 footer,
@@ -233,15 +267,15 @@ footer input,
   width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 
 .museum-text {
-  font-size: 48px;
+  font-size: var(--font-size-lg);
 }
 
 .opening-times {
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
 }
 
 @media (hover: hover) {
@@ -256,7 +290,7 @@ footer input,
 }
 
 .bold-text {
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
 }
 
 /* Right side of footer */
@@ -268,7 +302,7 @@ footer input,
 }
 
 #newsletter-heading {
-  font-size: 36px;
+  font-size: var(--font-size-base);
 }
 
 .newsletter-container {
@@ -295,7 +329,7 @@ footer input {
 }
 
 .social-media-icons {
-  font-size: 40px;
+  font-size: var(--font-size-md);
 }
 
 .social-media-icons > * {

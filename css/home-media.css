@@ -13,13 +13,13 @@
   }
 
   .hero-content h1 {
-    font-size: 68px;
+    font-size: var(--font-size-xl);
     width: 400px;
   }
 
   .hero-content p {
     width: 350px;
-    font-size: 20px;
+    font-size: var(--font-size-xxs);
   }
 
   /* Exhibition spaces section */
@@ -28,7 +28,7 @@
   }
 
   .exhibition-section h2 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
     text-align: center;
     margin: 0 20px;
   }
@@ -43,13 +43,13 @@
   }
 
   .exhibition-card h3 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   .card-image {
     height: 150px;
     width: 200px;
-    border-radius: 20px;
+    border-radius: var(--border-radius-small);
   }
 }
 
@@ -60,12 +60,12 @@
   }
 
   .explore-content h2 {
-    font-size: 68px;
+    font-size: var(--font-size-xl);
   }
 
   .explore-content section h3,
   .card-section h3 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   .explore-image {
@@ -75,17 +75,16 @@
   .explore-card {
     width: 268px;
     padding: 25px;
-    border-radius: 30px;
+    border-radius: var(--border-radius-medium);
   }
 
   .explore-card p {
-    font-size: 14px;
+    font-size: var(--font-size-xxxxs);
   }
 
   /* Special events section */
   .special-events-content h2 {
-    font-size: 36px;
-    margin: 0 20px;
+    font-size: var(--font-size-base);
   }
 
   .professor-image {
@@ -95,12 +94,12 @@
   .news-card,
   .professor-card {
     padding: 20px;
-    border-radius: 30px;
+    border-radius: var(--border-radius-medium);
   }
 
   .professor-image,
   .news-card img {
-    border-radius: 20px;
+    border-radius: var(--border-radius-small);
   }
 
   .news-card img {
@@ -120,7 +119,7 @@
   .hero-container,
   .explore-container,
   .special-events-section {
-    width: calc(100% - 100px);
+    width: var(--smaller-screen-width);
     max-width: 1000px;
   }
 }
@@ -143,7 +142,7 @@
     z-index: 2;
     padding: 0 10px;
     transition: color 0.2s;
-    height: 100%;
+    height: var(--scalable-height);
     display: flex;
     align-items: center;
   }
@@ -178,14 +177,14 @@
 
   .news-card,
   .professor-card {
-    width: 100%;
-    margin: 0 auto;
+    width: var(--scalable-width);
+    margin: var(--centering);
   }
 
   /* Shared layout */
   .explore-container,
   .special-events-section {
-    width: calc(100% - 60px);
+    width: var(--mobile-screen-width);
     max-width: 530px;
     padding: 100px 0;
   }
@@ -200,13 +199,13 @@
   }
 
   .hero-content h1 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
     width: 250px;
   }
 
   .hero-content p {
     width: 250px;
-    font-size: 16px;
+    font-size: var(--font-size-xxxs);
   }
 
   /* Exhibition spaces section */
@@ -219,7 +218,7 @@
   }
 
   .exhibition-card h3 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   .card-image {
@@ -234,11 +233,11 @@
   }
 
   .explore-content {
-    max-width: 100%;
+    max-width: var(--scalable-width);
   }
 
   .explore-content h2 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
   }
 
   .explore-image {
@@ -250,10 +249,14 @@
   }
 
   .explore-card {
-    width: 100%;
+    width: var(--scalable-width);
   }
 
   /* Special events section */
+  .special-events-content h2 {
+    margin: 0 20px;
+  }
+
   .special-events-section {
     flex-direction: column;
     gap: 50px;
@@ -261,8 +264,8 @@
   }
 
   .special-events-section a h4 {
-    font-size: 20px;
-    width: 100%;
+    font-size: var(--font-size-xxs);
+    width: var(--scalable-width);
     margin-bottom: 20px;
   }
 
@@ -271,7 +274,7 @@
   }
 
   .professor-image {
-    width: 100%;
+    width: var(--scalable-width);
     height: 250px;
     object-fit: cover;
   }
@@ -281,7 +284,7 @@
   }
 
   .news-card img {
-    width: 100%;
+    width: var(--scalable-width);
     height: 250px;
   }
 
@@ -306,7 +309,7 @@
   /* Hero section */
   .hero-section img {
     height: 270px;
-    width: 100%;
+    width: var(--scalable-width);
     object-fit: contain;
   }
 
@@ -314,11 +317,11 @@
     flex-direction: column;
     gap: 50px;
     padding: 50px 0 100px 0;
-    width: calc(100% - 60px);
+    width: var(--mobile-screen-width);
   }
 
   .hero-content {
-    width: 100%;
+    width: var(--scalable-width);
     max-width: 380px;
     flex-direction: column;
     align-items: center;
@@ -326,13 +329,13 @@
   }
 
   .hero-content h1 {
-    font-size: 48px;
-    width: 100%;
+    font-size: var(--font-size-lg);
+    width: var(--scalable-width);
   }
 
   .hero-content p {
-    font-size: 16px;
-    width: 100%;
+    font-size: var(--font-size-xxxs);
+    width: var(--scalable-width);
   }
 
   /* Exhibition section */
@@ -378,8 +381,8 @@
   .news-card img,
   .professor-image {
     height: 150px;
-    width: 100%;
-    border-radius: 20px;
+    width: var(--scalable-width);
+    border-radius: var(--border-radius-small);
   }
 
   .special-events-cards,

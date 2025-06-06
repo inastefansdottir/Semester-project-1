@@ -21,8 +21,8 @@ nav ul a,
 .explore-container,
 .special-events-section {
   max-width: 1600px;
-  width: calc(100% - 400px); /* ensures 200px padding on both sides */
-  margin: 0 auto; /* centers the container */
+  width: var(--large-screen-width); /* ensures 200px padding on both sides */
+  margin: var(--centering); /* centers the container */
   padding: 150px 0;
 }
 
@@ -32,7 +32,7 @@ nav ul a,
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  width: 100%;
+  width: var(--scalable-width);
 }
 
 .hero-section img {
@@ -58,13 +58,13 @@ nav ul a,
 }
 
 .hero-content h1 {
-  font-size: 100px;
+  font-size: var(--font-size-xxl);
   width: 400px;
 }
 
 .hero-content p {
   width: 500px;
-  font-size: 24px;
+  font-size: var(--font-size-xs);
 }
 
 /* Exhibition Spaces section */
@@ -76,7 +76,7 @@ nav ul a,
 }
 
 .exhibition-section h2 {
-  font-size: 68px;
+  font-size: var(--font-size-xl);
   color: var(--primary-color);
 }
 
@@ -89,7 +89,7 @@ nav ul a,
 .exhibition-card {
   background-color: var(--primary-color);
   padding: 30px;
-  border-radius: 30px;
+  border-radius: var(--border-radius-medium);
   transition: background-color 0.4s ease, transform 0.4s ease;
 }
 
@@ -101,7 +101,7 @@ nav ul a,
 }
 
 .exhibition-card h3 {
-  font-size: 30px;
+  font-size: var(--font-size-ms);
   width: 200px;
   text-align: center;
   margin-top: 20px;
@@ -123,7 +123,7 @@ nav ul a,
   height: 250px;
   width: 300px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: var(--border-radius-small);
 }
 
 /* Explore section */
@@ -152,7 +152,7 @@ nav ul a,
 
 .explore-content section h3,
 .card-section h3 {
-  font-size: 30px;
+  font-size: var(--font-size-ms);
   margin-bottom: 5px;
 }
 
@@ -162,15 +162,15 @@ nav ul a,
 
 .read-more {
   color: var(--primary-light);
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .explore-image {
   flex: 1;
   height: 500px;
   object-fit: cover;
-  width: 100%;
-  border-radius: 30px;
+  width: var(--scalable-width);
+  border-radius: var(--border-radius-medium);
 }
 
 .card-section {
@@ -182,8 +182,8 @@ nav ul a,
 .explore-card {
   width: 400px;
   padding: 35px;
-  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
+  box-shadow: 5px 5px 20px 0 var(--shadow-color);
+  border-radius: var(--border-radius-medium);
   transition: transform 0.4s ease;
 }
 
@@ -208,8 +208,8 @@ nav ul a,
 .special-events-section a h4 {
   color: var(--primary-color);
   font-family: "REM", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xxs);
   margin-bottom: 20px;
 }
 
@@ -221,18 +221,18 @@ nav ul a,
 
 .special-events-content h2 {
   color: var(--primary-color);
-  font-size: 48px;
+  font-size: var(--font-size-lg);
   margin-bottom: 5px;
 }
 
 .special-events-content h3 {
   color: var(--secondary-color);
-  font-size: 24px;
+  font-size: var(--font-size-xs);
   margin-bottom: 40px;
 }
 
 .professor-image {
-  width: 100%;
+  width: var(--scalable-width);
   height: 450px;
   object-fit: cover;
 }
@@ -246,14 +246,14 @@ nav ul a,
 .news-card,
 .professor-card {
   padding: 35px;
-  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
+  box-shadow: 5px 5px 20px 0 var(--shadow-color);
+  border-radius: var(--border-radius-medium);
   transition: transform 0.4s ease;
 }
 
 .professor-image,
 .news-card img {
-  border-radius: 20px;
+  border-radius: var(--border-radius-small);
 }
 
 .news-card img {

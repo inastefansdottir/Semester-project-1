@@ -5,7 +5,7 @@
   }
 
   .visiting-professor img {
-    width: 100%;
+    width: var(--scalable-width);
     height: 600px;
   }
 
@@ -21,7 +21,7 @@
   .article-content {
     width: 450px;
     margin-left: 50px;
-    font-size: 16px;
+    font-size: var(--font-size-xxxs);
   }
 }
 
@@ -30,22 +30,22 @@
   .special-events-section,
   .event-article {
     max-width: 1000px;
-    width: calc(100% - 100px);
+    width: var(--smaller-screen-width);
     padding: 50px 0;
   }
 
   .visiting-professor h3,
   .article-content h3 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   /* 1st section */
   .special-events-section h1 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
   }
 
   .special-events-section h2 {
-    font-size: 20px;
+    font-size: var(--font-size-xxs);
   }
 
   /* 2nd and 3rd section */
@@ -60,12 +60,12 @@
   .event-article {
     flex-direction: column;
     max-width: 500px;
-    width: calc(100% - 60px);
+    width: var(--mobile-screen-width);
   }
 
   /* 1st section */
   .special-events-section h1 {
-    font-size: 40px;
+    font-size: var(--font-size-md);
   }
 
   .visiting-professor h3 {
@@ -73,12 +73,12 @@
   }
 
   .visiting-professor p {
-    font-size: 16px;
+    font-size: var(--font-size-xxxs);
   }
 
   .visiting-professor img,
   .event-article img {
-    width: 100%;
+    width: var(--scalable-width);
     height: 300px;
     object-fit: cover;
   }
@@ -89,7 +89,7 @@
   }
 
   .article-content {
-    width: 100%;
+    width: var(--scalable-width);
     margin: 50px 0 0 0;
     text-align: left;
   }

@@ -1,8 +1,8 @@
 /* Shared layout */
 .visit-section,
 .contact-form-container {
-  width: calc(100% - 400px); /* ensures 200px padding on both sides */
-  margin: 0 auto; /* centers the container */
+  width: var(--large-screen-width); /* ensures 200px padding on both sides */
+  margin: var(--centering); /* centers the container */
 }
 
 /* Visit section */
@@ -18,7 +18,7 @@
 }
 
 .visit-content h1 {
-  font-size: 68px;
+  font-size: var(--font-size-xl);
   color: var(--secondary-color);
 }
 
@@ -27,13 +27,13 @@
 }
 
 .visit-content h2 {
-  font-size: 36px;
+  font-size: var(--font-size-base);
   margin-bottom: 10px;
 }
 
 .visit-content p,
 .visit-content address {
-  font-size: 20px;
+  font-size: var(--font-size-xxs);
   margin-bottom: 20px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .opening-times-content p {
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
 }
 
 /* Contact form section */
@@ -59,20 +59,20 @@
 }
 
 .contact-form-section h2 {
-  font-size: 48px;
+  font-size: var(--font-size-lg);
   color: var(--secondary-color);
 }
 
 .contact-form-section h3 {
-  font-size: 32px;
+  font-size: var(--font-size-ml);
   margin-bottom: 20px;
 }
 
 .contact-form-container {
   max-width: 650px;
   padding: 50px;
-  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
+  box-shadow: 5px 5px 20px 0px var(--shadow-color);
+  border-radius: var(--border-radius-medium);
 }
 
 .contact-form > * {
@@ -80,7 +80,7 @@
 }
 
 .contact-form button {
-  width: 100%;
+  width: var(--scalable-width);
 }
 
 .contact-form-content,
@@ -94,9 +94,9 @@
 .contact-form-content input,
 .message textarea {
   border: none;
-  font-size: 20px;
+  font-size: var(--font-size-xxs);
   padding: 10px 20px;
-  border-radius: 30px;
+  border-radius: var(--border-radius-medium);
   color: var(--primary-color);
   outline: 2px solid var(--primary-color);
 }

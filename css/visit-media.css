@@ -3,19 +3,19 @@
   .visit-section,
   .contact-form-container {
     max-width: 1000px;
-    width: calc(100% - 100px);
+    width: var(--smaller-screen-width);
     gap: 50px;
   }
 
   /* Visit section */
   .visit-content h2 {
-    font-size: 30px;
+    font-size: var(--font-size-ms);
     margin-bottom: 5px;
   }
 
   .visit-content p,
   .visit-content address {
-    font-size: 16px;
+    font-size: var(--font-size-xxxs);
   }
 
   /* Contact form section*/
@@ -41,7 +41,7 @@
   .visit-section,
   .contact-form-container {
     max-width: 500px;
-    width: calc(100% - 60px);
+    width: var(--mobile-screen-width);
   }
 
   /* Visit section */
@@ -51,13 +51,13 @@
   }
 
   .visit-content h1 {
-    font-size: 48px;
+    font-size: var(--font-size-lg);
     text-align: center;
     margin-bottom: 30px;
   }
 
   .visit-content {
-    width: 100%;
+    width: var(--scalable-width);
   }
 
   .info {
@@ -66,11 +66,11 @@
 
   /* Contact form section */
   .contact-form-section h2 {
-    font-size: 40px;
+    font-size: var(--font-size-md);
   }
 
   .contact-form-section h3 {
-    font-size: 24px;
+    font-size: var(--font-size-xs);
   }
 
   .contact-form-container {
@@ -79,7 +79,7 @@
 
   .contact-form-content input,
   .message textarea {
-    font-size: 16px;
+    font-size: var(--font-size-xxxs);
   }
 
   .message textarea {

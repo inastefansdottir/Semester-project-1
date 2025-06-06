@@ -4,20 +4,20 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1600px;
-  width: calc(100% - 400px); /* ensures 200px padding on both sides */
-  margin: 0 auto; /* centers the container */
+  width: var(--large-screen-width); /* ensures 200px padding on both sides */
+  margin: var(--centering); /* centers the container */
   padding: 100px 0;
 }
 
 .hero-section h1 {
-  font-size: 100px;
+  font-size: var(--font-size-xxl);
 }
 
 .hero-section img {
   width: 850px;
   height: 500px;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: var(--border-radius-medium);
 }
 
 /* Exhibiton cards section */
@@ -38,7 +38,7 @@
 .exhibition-card {
   background-color: var(--primary-color);
   padding: 30px;
-  border-radius: 30px;
+  border-radius: var(--border-radius-medium);
   transition: background-color 0.4s ease, transform 0.4s ease;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .exhibition-card h2 {
-  font-size: 30px;
+  font-size: var(--font-size-ms);
   width: 200px;
   text-align: center;
   margin-top: 20px;
@@ -60,7 +60,7 @@
   height: 250px;
   width: 300px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: var(--border-radius-small);
 }
 
 @media (hover: hover) {

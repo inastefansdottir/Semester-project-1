@@ -1,7 +1,7 @@
 @media (max-width: 1450px) {
   /* Footer */
   footer {
-    font-size: 16px;
+    font-size: var(--font-size-xxxs);
   }
 
   .museum-info {
@@ -10,7 +10,7 @@
   }
 
   .museum-text {
-    font-size: 36px;
+    font-size: var(--font-size-base);
   }
 
   .museum-info address {
@@ -19,7 +19,7 @@
 
   /* Fight side of footer */
   #newsletter-heading {
-    font-size: 30px;
+    font-size: var(--font-size-ms);
   }
 
   .newsletter-form {
@@ -38,14 +38,14 @@
   }
 
   .social-media-icons {
-    font-size: 30px;
+    font-size: var(--font-size-ms);
   }
 }
 
 @media (max-width: 1300px) {
   .navigation-wrapper,
   .footer-wrapper {
-    width: calc(100% - 100px);
+    width: var(--smaller-screen-width);
     max-width: 1000px;
   }
 
@@ -53,7 +53,7 @@
 
   nav ul {
     gap: 30px;
-    font-size: 14px;
+    font-size: var(--font-size-xxxxs);
   }
 
   .search-input {
@@ -89,7 +89,7 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
-    box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 23px 0 var(--shadow-color);
     background-color: var(--primary-light);
   }
 
@@ -113,7 +113,7 @@
 
   .navigation-wrapper {
     margin: 0;
-    width: 100%;
+    width: var(--scalable-width);
   }
 
   /* Hamburger menu */
@@ -126,7 +126,7 @@
   /* Nav links */
   .nav-links li {
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: var(--font-size-xxs);
   }
 
   .nav-links a {
@@ -152,11 +152,11 @@
 
   /* Mobile icons */
   .fa-magnifying-glass {
-    font-size: 30px;
+    font-size: var(--font-size-ms);
   }
 
   .fa-ticket {
-    font-size: 40px;
+    font-size: var(--font-size-md);
   }
 
   .icon-mobile-section {
@@ -179,27 +179,27 @@
 
   .footer-wrapper {
     flex-direction: column;
-    width: 100%;
+    width: var(--scalable-width);
     padding: 50px 0;
     align-items: center;
     gap: 50px;
-    font-size: 20px;
+    font-size: var(--font-size-xxs);
   }
 
   /* Left side of footer */
   .museum-text {
-    font-size: 36px;
-    width: 100%;
+    font-size: var(--font-size-base);
+    width: var(--scalable-width);
   }
 
   .museum-info address {
-    width: 100%;
+    width: var(--scalable-width);
   }
 
   .museum-info,
   .newsletter-section {
-    width: 100%;
-    width: calc(100% - 60px);
+    width: var(--scalable-width);
+    width: var(--mobile-screen-width);
     max-width: 500px;
   }
 
