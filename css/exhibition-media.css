@@ -1,7 +1,7 @@
 @media (max-width: 1750px) {
   /* Hero section */
   .hero-section h1 {
-    font-size: var(font-size-xl);
+    font-size: var(--font-size-xl);
     max-width: 400px;
   }
 

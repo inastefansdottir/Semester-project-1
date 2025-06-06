@@ -63,7 +63,7 @@
 
   /* Explore text */
   .explore-content h1 {
-    font-size: var(font-size-xl);
+    font-size: var(--font-size-xl);
   }
 
   .explore-content h2 {
